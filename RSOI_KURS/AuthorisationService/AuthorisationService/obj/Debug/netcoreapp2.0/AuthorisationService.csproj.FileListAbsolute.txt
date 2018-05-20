@@ -1,0 +1,11 @@
+C:\Users\Vladimir\Desktop\RSOI_KURS\AuthorisationService\AuthorisationService\bin\Debug\netcoreapp2.0\AuthorisationService.deps.json
+C:\Users\Vladimir\Desktop\RSOI_KURS\AuthorisationService\AuthorisationService\bin\Debug\netcoreapp2.0\AuthorisationService.runtimeconfig.json
+C:\Users\Vladimir\Desktop\RSOI_KURS\AuthorisationService\AuthorisationService\bin\Debug\netcoreapp2.0\AuthorisationService.runtimeconfig.dev.json
+C:\Users\Vladimir\Desktop\RSOI_KURS\AuthorisationService\AuthorisationService\bin\Debug\netcoreapp2.0\AuthorisationService.dll
+C:\Users\Vladimir\Desktop\RSOI_KURS\AuthorisationService\AuthorisationService\bin\Debug\netcoreapp2.0\AuthorisationService.pdb
+C:\Users\Vladimir\Desktop\RSOI_KURS\AuthorisationService\AuthorisationService\obj\Debug\netcoreapp2.0\AuthorisationService.csprojResolveAssemblyReference.cache
+C:\Users\Vladimir\Desktop\RSOI_KURS\AuthorisationService\AuthorisationService\obj\Debug\netcoreapp2.0\AuthorisationService.csproj.CoreCompileInputs.cache
+C:\Users\Vladimir\Desktop\RSOI_KURS\AuthorisationService\AuthorisationService\obj\Debug\netcoreapp2.0\AuthorisationService.AssemblyInfoInputs.cache
+C:\Users\Vladimir\Desktop\RSOI_KURS\AuthorisationService\AuthorisationService\obj\Debug\netcoreapp2.0\AuthorisationService.AssemblyInfo.cs
+C:\Users\Vladimir\Desktop\RSOI_KURS\AuthorisationService\AuthorisationService\obj\Debug\netcoreapp2.0\AuthorisationService.dll
+C:\Users\Vladimir\Desktop\RSOI_KURS\AuthorisationService\AuthorisationService\obj\Debug\netcoreapp2.0\AuthorisationService.pdb
