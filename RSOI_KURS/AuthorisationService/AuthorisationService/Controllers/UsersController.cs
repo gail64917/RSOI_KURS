@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using AuthorisationService.Data;
-using AuthorisationService.Model;
+using RabbitDLL;
 using AuthorisationService.Functions;
 
 namespace AuthorisationService.Controllers

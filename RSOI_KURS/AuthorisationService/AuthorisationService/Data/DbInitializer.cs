@@ -1,5 +1,5 @@
 ﻿using AuthorisationService.Functions;
-using AuthorisationService.Model;
+using RabbitDLL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
