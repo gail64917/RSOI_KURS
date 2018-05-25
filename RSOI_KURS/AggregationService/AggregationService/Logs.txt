@@ -1,0 +1,80 @@
+63662859362828782410 - Request: SERVICE: ArtistService 
+GET: http://localhost:51229//api/products/full
+Accept: application/json
+
+
+63662859362828782410 - Response: Date: Fri, 25 May 2018 12:36:02 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxwcm9kdWN0c1xmdWxs?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":[{"id":1,"productID":1,"categoryID":1,"strength":10,"product":null,"category":{"id":1,"categoryName":"For Erudite","boundedWith":null}},{"id":2,"productID":1,"categoryID":2,"strength":7,"product":null,"category":{"id":2,"categoryName":"For Men","boundedWith":null}},{"id":3,"productID":1,"categoryID":3,"strength":7,"product":null,"category":{"id":3,"categoryName":"For Woman","boundedWith":null}}]},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":[{"id":4,"productID":2,"categoryID":1,"strength":3,"product":null,"category":{"id":1,"categoryName":"For Erudite","boundedWith":null}},{"id":5,"productID":2,"categoryID":2,"strength":5,"product":null,"category":{"id":2,"categoryName":"For Men","boundedWith":null}},{"id":6,"productID":2,"categoryID":3,"strength":3,"product":null,"category":{"id":3,"categoryName":"For Woman","boundedWith":null}}]}]
+
+
+
+6366285947236200299 - Request: SERVICE: ArtistService 
+GET: http://localhost:51229//api/products/full
+Accept: application/json
+
+
+6366285947236200299 - Response: Date: Fri, 25 May 2018 12:37:52 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxwcm9kdWN0c1xmdWxs?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":[{"id":1,"productID":1,"categoryID":1,"strength":10,"product":null,"category":{"id":1,"categoryName":"For Erudite","boundedWith":null}},{"id":2,"productID":1,"categoryID":2,"strength":7,"product":null,"category":{"id":2,"categoryName":"For Men","boundedWith":null}},{"id":3,"productID":1,"categoryID":3,"strength":7,"product":null,"category":{"id":3,"categoryName":"For Woman","boundedWith":null}}]},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":[{"id":4,"productID":2,"categoryID":1,"strength":3,"product":null,"category":{"id":1,"categoryName":"For Erudite","boundedWith":null}},{"id":5,"productID":2,"categoryID":2,"strength":5,"product":null,"category":{"id":2,"categoryName":"For Men","boundedWith":null}},{"id":6,"productID":2,"categoryID":3,"strength":3,"product":null,"category":{"id":3,"categoryName":"For Woman","boundedWith":null}}]}]
+
+
+
+63662859809723934910 - Request: SERVICE: ArtistService 
+GET: http://localhost:51229//api/products/full
+Accept: application/json
+
+
+63662859809723934910 - Response: Date: Fri, 25 May 2018 12:43:29 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxwcm9kdWN0c1xmdWxs?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":[{"id":1,"productID":1,"categoryID":1,"strength":10,"product":null,"category":{"id":1,"categoryName":"For Erudite","boundedWith":null}},{"id":2,"productID":1,"categoryID":2,"strength":7,"product":null,"category":{"id":2,"categoryName":"For Men","boundedWith":null}},{"id":3,"productID":1,"categoryID":3,"strength":7,"product":null,"category":{"id":3,"categoryName":"For Woman","boundedWith":null}}]},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":[{"id":4,"productID":2,"categoryID":1,"strength":3,"product":null,"category":{"id":1,"categoryName":"For Erudite","boundedWith":null}},{"id":5,"productID":2,"categoryID":2,"strength":5,"product":null,"category":{"id":2,"categoryName":"For Men","boundedWith":null}},{"id":6,"productID":2,"categoryID":3,"strength":3,"product":null,"category":{"id":3,"categoryName":"For Woman","boundedWith":null}}]}]
+
+
+
+6366286154109351849 - Request: SERVICE: ArtistService 
+GET: http://localhost:51229//api/products/full
+Accept: application/json
+
+
+6366286154109351849 - Response: Date: Fri, 25 May 2018 13:12:21 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxwcm9kdWN0c1xmdWxs?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":[{"id":1,"productID":1,"categoryID":1,"strength":10,"product":null,"category":{"id":1,"categoryName":"For Erudite","boundedWith":null}},{"id":2,"productID":1,"categoryID":2,"strength":7,"product":null,"category":{"id":2,"categoryName":"For Men","boundedWith":null}},{"id":3,"productID":1,"categoryID":3,"strength":7,"product":null,"category":{"id":3,"categoryName":"For Woman","boundedWith":null}}]},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":[{"id":4,"productID":2,"categoryID":1,"strength":3,"product":null,"category":{"id":1,"categoryName":"For Erudite","boundedWith":null}},{"id":5,"productID":2,"categoryID":2,"strength":5,"product":null,"category":{"id":2,"categoryName":"For Men","boundedWith":null}},{"id":6,"productID":2,"categoryID":3,"strength":3,"product":null,"category":{"id":3,"categoryName":"For Woman","boundedWith":null}}]}]
+
+
+
+6366286482476281858 - Request: SERVICE: ArtistService 
+GET: http://localhost:51229//api/products/full
+Accept: application/json
+
+
+6366286482476281858 - Response: Date: Fri, 25 May 2018 14:07:04 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxwcm9kdWN0c1xmdWxs?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":[{"id":1,"productID":1,"categoryID":1,"strength":10,"product":null,"category":{"id":1,"categoryName":"For Erudite","boundedWith":null}},{"id":2,"productID":1,"categoryID":2,"strength":7,"product":null,"category":{"id":2,"categoryName":"For Men","boundedWith":null}},{"id":3,"productID":1,"categoryID":3,"strength":7,"product":null,"category":{"id":3,"categoryName":"For Woman","boundedWith":null}}]},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":[{"id":4,"productID":2,"categoryID":1,"strength":3,"product":null,"category":{"id":1,"categoryName":"For Erudite","boundedWith":null}},{"id":5,"productID":2,"categoryID":2,"strength":5,"product":null,"category":{"id":2,"categoryName":"For Men","boundedWith":null}},{"id":6,"productID":2,"categoryID":3,"strength":3,"product":null,"category":{"id":3,"categoryName":"For Woman","boundedWith":null}}]}]
+
+
+

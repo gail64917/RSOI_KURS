@@ -1,0 +1,43 @@
+﻿@model AggregationService.Controllers.HomeController.FullView
+
+@{
+    ViewData["Title"] = "AllItems";
+}
+
+<h2>AllItems</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Product Name</th>
+            @foreach(var item in Model.categoryCollection)
+            {
+                <th>@item</th>
+            }
+            <th>Cost</th>
+            <th>Count In Base</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.productCollection) {
+        <tr>
+            <th>@item.ProductName</th>
+            @foreach (var product in Model.categoryCollection)
+            {
+                <th>@item.CategoryParameters.Where(x => x.Key == product).FirstOrDefault().Value</th>
+            }
+            <th>@item.Cost</th>
+            <th>@item.Count</th>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
