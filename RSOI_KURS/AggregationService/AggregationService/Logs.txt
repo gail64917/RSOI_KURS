@@ -1188,3 +1188,271 @@ Status: OK
 
 
 
+6366311984469838069 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+6366311984469838069 - Response: Date: Mon, 28 May 2018 12:57:24 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+6366311984508795039 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiN2EwYzA1N2UtZTUwZC00MjMwLWJlMTktMWQxM2UxOTIyMTE1IiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NTI0MjQ0LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.oUycG4uUCkaN-8ZgFa-TfANFkZVlpg6GHLHtn1BQmDE"
+}
+
+6366311984508795039 - Response: Date: Mon, 28 May 2018 12:57:24 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiN2EwYzA1N2UtZTUwZC00MjMwLWJlMTktMWQxM2UxOTIyMTE1IiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NTI0MjQ0LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.oUycG4uUCkaN-8ZgFa-TfANFkZVlpg6GHLHtn1BQmDE"}
+
+
+
+63663119849631122016 - Request: SERVICE: ArtistService 
+GET: http://localhost:51229//api/products/full
+Accept: application/json
+
+
+63663119849631122016 - Response: Date: Mon, 28 May 2018 12:57:29 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxwcm9kdWN0c1xmdWxs?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":[{"id":1,"productID":1,"categoryID":1,"strength":10,"product":null,"category":{"id":1,"categoryName":"For Erudite","boundedWith":null}},{"id":2,"productID":1,"categoryID":2,"strength":7,"product":null,"category":{"id":2,"categoryName":"For Men","boundedWith":null}},{"id":3,"productID":1,"categoryID":3,"strength":7,"product":null,"category":{"id":3,"categoryName":"For Woman","boundedWith":null}}]},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":[{"id":4,"productID":2,"categoryID":1,"strength":3,"product":null,"category":{"id":1,"categoryName":"For Erudite","boundedWith":null}},{"id":5,"productID":2,"categoryID":2,"strength":5,"product":null,"category":{"id":2,"categoryName":"For Men","boundedWith":null}},{"id":6,"productID":2,"categoryID":3,"strength":3,"product":null,"category":{"id":3,"categoryName":"For Woman","boundedWith":null}}]}]
+
+
+
+6366311993453726988 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+6366311993453726988 - Response: Date: Mon, 28 May 2018 12:58:54 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+63663119934972200010 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiNDRiMTMyZjQtYTE4YS00NThkLWIzOTMtNDkxYmNhMTJlY2IzIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NTI0MzM0LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.GYtgcA05bkg4hTq1t9UXjr-GPLEzyM8StWugLFS_bvQ"
+}
+
+63663119934972200010 - Response: Date: Mon, 28 May 2018 12:58:54 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiNDRiMTMyZjQtYTE4YS00NThkLWIzOTMtNDkxYmNhMTJlY2IzIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NTI0MzM0LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.GYtgcA05bkg4hTq1t9UXjr-GPLEzyM8StWugLFS_bvQ"}
+
+
+
+63663119945851627511 - Request: SERVICE: ArtistService 
+GET: http://localhost:51229//api/products/full
+Accept: application/json
+
+
+63663119945851627511 - Response: Date: Mon, 28 May 2018 12:59:05 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxwcm9kdWN0c1xmdWxs?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":[{"id":1,"productID":1,"categoryID":1,"strength":10,"product":null,"category":{"id":1,"categoryName":"For Erudite","boundedWith":null}},{"id":2,"productID":1,"categoryID":2,"strength":7,"product":null,"category":{"id":2,"categoryName":"For Men","boundedWith":null}},{"id":3,"productID":1,"categoryID":3,"strength":7,"product":null,"category":{"id":3,"categoryName":"For Woman","boundedWith":null}}]},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":[{"id":4,"productID":2,"categoryID":1,"strength":3,"product":null,"category":{"id":1,"categoryName":"For Erudite","boundedWith":null}},{"id":5,"productID":2,"categoryID":2,"strength":5,"product":null,"category":{"id":2,"categoryName":"For Men","boundedWith":null}},{"id":6,"productID":2,"categoryID":3,"strength":3,"product":null,"category":{"id":3,"categoryName":"For Woman","boundedWith":null}}]}]
+
+
+
+6366312007471181209 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+6366312007471181209 - Response: Date: Mon, 28 May 2018 13:01:14 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+6366312007512363589 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiNmY1YTdhN2UtZmQ0ZS00MzhiLTgzODYtNjVlZDI4M2UxOGExIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NTI0NDc0LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.Htyf3lE0tfrDdWuqWifGL4N6x0bxj-c1jPjC6mq3j8A"
+}
+
+6366312007512363589 - Response: Date: Mon, 28 May 2018 13:01:14 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiNmY1YTdhN2UtZmQ0ZS00MzhiLTgzODYtNjVlZDI4M2UxOGExIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NTI0NDc0LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.Htyf3lE0tfrDdWuqWifGL4N6x0bxj-c1jPjC6mq3j8A"}
+
+
+
+63663120078457557111 - Request: SERVICE: ArtistService 
+GET: http://localhost:51229//api/products/full/cortege
+Accept: application/json
+
+
+63663120078457557111 - Response: Date: Mon, 28 May 2018 13:01:18 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxwcm9kdWN0c1xmdWxsXGNvcnRlZ2U=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"categoryCollection":["For Erudite","For Men","For Woman"],"productCollection":[{"productName":"Harry Potter","categoryParameters":{"For Erudite":10,"For Men":7,"For Woman":7},"cost":2000.0,"count":1},{"productName":"The Witcher 3","categoryParameters":{"For Erudite":3,"For Men":5,"For Woman":3},"cost":2500.0,"count":2}]}
+
+
+
+63663120086933059711 - Request: SERVICE: ArtistService 
+GET: http://localhost:51229//api/products/full/cortege
+Accept: application/json
+
+
+63663120086933059711 - Response: Date: Mon, 28 May 2018 13:01:26 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxwcm9kdWN0c1xmdWxsXGNvcnRlZ2U=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"categoryCollection":["For Erudite","For Men","For Woman"],"productCollection":[{"productName":"Harry Potter","categoryParameters":{"For Erudite":10,"For Men":7,"For Woman":7},"cost":2000.0,"count":1},{"productName":"The Witcher 3","categoryParameters":{"For Erudite":3,"For Men":5,"For Woman":3},"cost":2500.0,"count":2}]}
+
+
+
+63663120099977483410 - Request: SERVICE: ArtistService 
+GET: http://localhost:51229//api/products/full/cortege
+Accept: application/json
+
+
+63663120099977483410 - Response: Date: Mon, 28 May 2018 13:01:39 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxwcm9kdWN0c1xmdWxsXGNvcnRlZ2U=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"categoryCollection":["For Erudite","For Men","For Woman"],"productCollection":[{"productName":"Harry Potter","categoryParameters":{"For Erudite":10,"For Men":7,"For Woman":7},"cost":2000.0,"count":1},{"productName":"The Witcher 3","categoryParameters":{"For Erudite":3,"For Men":5,"For Woman":3},"cost":2500.0,"count":2}]}
+
+
+
+6366312020883978328 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+6366312020883978328 - Response: Date: Mon, 28 May 2018 13:03:28 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+6366312020931113609 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiZWRlZWE0NDgtMmI1Ny00OTM3LTkyMjUtMDU1YmRmYmRhZGJjIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NTI0NjA4LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.BiqPsyG40OCkUIcBHvFK8T0qxmmEA47Tm0T0FMgOzMU"
+}
+
+6366312020931113609 - Response: Date: Mon, 28 May 2018 13:03:28 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiZWRlZWE0NDgtMmI1Ny00OTM3LTkyMjUtMDU1YmRmYmRhZGJjIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NTI0NjA4LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.BiqPsyG40OCkUIcBHvFK8T0qxmmEA47Tm0T0FMgOzMU"}
+
+
+
+6366312021722060838 - Request: SERVICE: ArtistService 
+GET: http://localhost:51229//api/products/full/cortege
+Accept: application/json
+
+
+6366312021722060838 - Response: Date: Mon, 28 May 2018 13:03:37 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxwcm9kdWN0c1xmdWxsXGNvcnRlZ2U=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"categoryCollection":["For Erudite","For Men","For Woman"],"productCollection":[{"productName":"Harry Potter","categoryParameters":{"For Erudite":10,"For Men":7,"For Woman":7},"cost":2000.0,"count":1},{"productName":"The Witcher 3","categoryParameters":{"For Erudite":3,"For Men":5,"For Woman":3},"cost":2500.0,"count":2}]}
+
+
+

@@ -28,6 +28,7 @@ namespace ProductsService.Controllers
             return _context.Products;
         }
 
+
         // GET: api/Products/Full
         [Route("Full")]
         [HttpGet]
@@ -48,9 +49,9 @@ namespace ProductsService.Controllers
                 lst.Add(prod);
             }
 
-            foreach(Product prod in lst)
+            foreach (Product prod in lst)
             {
-                foreach(Product_Category pc in prod.BoundedWith)
+                foreach (Product_Category pc in prod.BoundedWith)
                 {
                     pc.Category.BoundedWith = null;
                     pc.Product = null;
@@ -58,6 +59,57 @@ namespace ProductsService.Controllers
             }
             return lst;
         }
+
+
+        // GET: api/products/full/cortege
+        [Route("full/cortege")]
+        [HttpGet]
+        public FullView GetFullProductsInfoCortege()
+        {
+            var productInfo = _context.Products.Include(c => c.BoundedWith);
+            foreach (Product product in productInfo)
+            {
+                foreach (Product_Category pc in product.BoundedWith)
+                {
+                    pc.Category = _context.Categories.Find(pc.CategoryID);
+                }
+            }
+
+            List<Product> lst = new List<Product>();
+            foreach (Product prod in productInfo.ToList())
+            {
+                lst.Add(prod);
+            }
+
+            foreach (Product prod in lst)
+            {
+                foreach (Product_Category pc in prod.BoundedWith)
+                {
+                    pc.Category.BoundedWith = null;
+                    pc.Product = null;
+                }
+            }
+
+            //___________________________________________________
+            List<ProductCortege> lstCortege = new List<ProductCortege>();
+            HashSet<string> Categories = new HashSet<string>();
+            foreach (Product product in lst)
+            {
+                ProductCortege cortege = new ProductCortege(product.ProductName, product.Cost, product.CountInBase);
+                foreach (Product_Category bound in product.BoundedWith)
+                {
+                    cortege.CategoryParameters.Add(bound.Category.CategoryName, bound.Strength);
+                    Categories.Add(bound.Category.CategoryName);
+                }
+                lstCortege.Add(cortege);
+            }
+
+            FullView objectToView = new FullView() { categoryCollection = Categories, productCollection = lstCortege };
+            return objectToView;
+            //___________________________________________________
+        }
+
+
 
         // GET: api/Products/5
         [HttpGet("{id}")]

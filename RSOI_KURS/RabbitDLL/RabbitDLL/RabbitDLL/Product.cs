@@ -4,6 +4,12 @@ using System.Text;
 
 namespace RabbitDLL
 {
+    public class FullView
+    {
+        public HashSet<string> categoryCollection = new HashSet<string>();
+        public List<ProductCortege> productCollection = new List<ProductCortege>();
+    }
+
     public class Product
     {
         public int ID { get; set; }
