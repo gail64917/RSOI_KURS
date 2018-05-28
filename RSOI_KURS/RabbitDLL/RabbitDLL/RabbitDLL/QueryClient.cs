@@ -1,37 +1,27 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using AspNetCore.Http.Extensions;
+
+
 
 namespace RabbitDLL
 {
     public class QueryClient
     {
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        public static async Task<string> SendQueryToService(string ServiceUrl, string extraUrl, string user)
+        public static async Task<string> SendQueryToService(HttpMethod method ,string ServiceUrl, string extraUrl, string user, JObject values)
         {
             //string user = HttpContext.Session.GetString("Login");
             user = user != null ? user : "";
 
             var corrId = string.Format("{0}{1}", DateTime.Now.Ticks, Thread.CurrentThread.ManagedThreadId);
-            string request;
+            string request = null;
             byte[] responseMessage;
 
             using (var client = new HttpClient())
@@ -52,9 +42,29 @@ namespace RabbitDLL
 
                 client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-                HttpResponseMessage response = await client.GetAsync(extraUrl);
+                HttpResponseMessage response = null;
+                if (method == HttpMethod.Get)
+                {
+                    response = await client.GetAsync(extraUrl);
+                    request = "SERVICE: ArtistService \r\nGET: " + ServiceUrl + "/" + extraUrl + "\r\n" + client.DefaultRequestHeaders.ToString();
+                }
+                if (method == HttpMethod.Post)
+                {
+                    response = await client.PostAsJsonAsync(extraUrl, values);
+                    request = "SERVICE: AuthorisationService \r\nPOST: " + ServiceUrl + "/" + extraUrl + "\r\n" + client.DefaultRequestHeaders.ToString() + "\r\n" + values;
+                }
+                if (method == HttpMethod.Put)
+                {
+                    
+                    response = await client.PutAsJsonAsync(extraUrl, values);
+                    request = "SERVICE: AuthorisationService \r\nPUT: " + ServiceUrl + "/" + extraUrl + "\r\n" + client.DefaultRequestHeaders.ToString() + "\r\n" + values;
+                }
+                if (method == HttpMethod.Delete)
+                {
+                    response = await client.DeleteAsync(extraUrl);
+                    request = "SERVICE: AuthorisationService \r\nDelete: " + ServiceUrl + "/" + extraUrl + "\r\n" + client.DefaultRequestHeaders.ToString();
+                }
 
-                request = "SERVICE: ArtistService \r\nGET: " + ServiceUrl + "/" + extraUrl + "\r\n" + client.DefaultRequestHeaders.ToString();
                 string responseString = response.Headers.ToString() + "\nStatus: " + response.StatusCode.ToString();
 
                 if (response.IsSuccessStatusCode)

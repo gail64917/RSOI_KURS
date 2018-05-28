@@ -1,23 +1,33 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.0",
-    "signature": "d1c4f674b5425cf57488ab5ae014db9793fae0c9"
+    "signature": "696e094ecd68950200c3c32a21e811bb7ea52ebc"
   },
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v2.0": {
       "RabbitDLL/1.0.0": {
         "dependencies": {
-          "EasyNetQ": "2.3.3"
+          "AspNetCore.Http.Extensions": "1.0.0",
+          "EasyNetQ": "2.3.3",
+          "System.Data.SqlClient": "4.2.0.2"
         },
         "runtime": {
           "RabbitDLL.dll": {}
         }
       },
+      "AspNetCore.Http.Extensions/1.0.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "10.0.3"
+        },
+        "runtime": {
+          "lib/netstandard2.0/AspNetCore.Http.Extensions.dll": {}
+        }
+      },
       "EasyNetQ/2.3.3": {
         "dependencies": {
           "Microsoft.Extensions.Logging.TraceSource": "1.0.2",
-          "Newtonsoft.Json": "10.0.2",
+          "Newtonsoft.Json": "10.0.3",
           "RabbitMQ.Client": "5.0.1",
           "System.Diagnostics.Debug": "4.3.0",
           "System.Diagnostics.Tools": "4.3.0",
@@ -101,7 +111,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "Newtonsoft.Json/10.0.2": {
+      "Newtonsoft.Json/10.0.3": {
         "dependencies": {
           "Microsoft.CSharp": "4.3.0",
           "System.ComponentModel.TypeConverter": "4.3.0",
@@ -1033,6 +1043,11 @@
           "System.Threading": "4.3.0",
           "System.Xml.ReaderWriter": "4.3.0"
         }
+      },
+      "System.Data.SqlClient/4.2.0.2": {
+        "runtime": {
+          "System.Data.SqlClient.dll": {}
+        }
       }
     }
   },
@@ -1041,6 +1056,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "AspNetCore.Http.Extensions/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-MovQ/IDALqvhY1OyxfyBur+b+KlMF58lcwE51l2xeqhLOcJ7/kj3aPZMok7aS+VOmgMS0J2JwbbHCmoRiHF6Vw==",
+      "path": "aspnetcore.http.extensions/1.0.0",
+      "hashPath": "aspnetcore.http.extensions.1.0.0.nupkg.sha512"
     },
     "EasyNetQ/2.3.3": {
       "type": "package",
@@ -1084,12 +1106,12 @@
       "path": "microsoft.win32.primitives/4.3.0",
       "hashPath": "microsoft.win32.primitives.4.3.0.nupkg.sha512"
     },
-    "Newtonsoft.Json/10.0.2": {
+    "Newtonsoft.Json/10.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-iwElSU2IXmwGvytJsezyDML2ZWDkG2JzTYzlU/BNlmzMdlmRvbnwITsGGY74gwVEpDli1UdOLkMT7/3jxWvXzA==",
-      "path": "newtonsoft.json/10.0.2",
-      "hashPath": "newtonsoft.json.10.0.2.nupkg.sha512"
+      "sha512": "sha512-hSXaFmh7hNCuEoC4XNY5DrRkLDzYHqPx/Ik23R4J86Z7PE/Y6YidhG602dFVdLBRSdG6xp9NabH3dXpcoxWvww==",
+      "path": "newtonsoft.json/10.0.3",
+      "hashPath": "newtonsoft.json.10.0.3.nupkg.sha512"
     },
     "RabbitMQ.Client/5.0.1": {
       "type": "package",
@@ -1664,6 +1686,11 @@
       "sha512": "sha512-lJ8AxvkX7GQxpC6GFCeBj8ThYVyQczx2+f/cWHJU8tjS7YfI6Cv6bon70jVEgs2CiFbmmM8b9j1oZVx0dSI2Ww==",
       "path": "system.xml.xmldocument/4.3.0",
       "hashPath": "system.xml.xmldocument.4.3.0.nupkg.sha512"
+    },
+    "System.Data.SqlClient/4.2.0.2": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

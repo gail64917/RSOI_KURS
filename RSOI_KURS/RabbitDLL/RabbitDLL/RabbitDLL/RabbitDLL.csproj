@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AspNetCore.Http.Extensions" Version="1.0.0" />
     <PackageReference Include="EasyNetQ" Version="2.3.3" />
   </ItemGroup>
 
