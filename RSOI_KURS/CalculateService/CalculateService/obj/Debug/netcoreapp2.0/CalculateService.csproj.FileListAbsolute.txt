@@ -9,3 +9,6 @@ C:\Users\Vladimir\Documents\GitHub\RSOI_KURS\RSOI_KURS\CalculateService\Calculat
 C:\Users\Vladimir\Documents\GitHub\RSOI_KURS\RSOI_KURS\CalculateService\CalculateService\obj\Debug\netcoreapp2.0\CalculateService.AssemblyInfo.cs
 C:\Users\Vladimir\Documents\GitHub\RSOI_KURS\RSOI_KURS\CalculateService\CalculateService\obj\Debug\netcoreapp2.0\CalculateService.dll
 C:\Users\Vladimir\Documents\GitHub\RSOI_KURS\RSOI_KURS\CalculateService\CalculateService\obj\Debug\netcoreapp2.0\CalculateService.pdb
+C:\Users\Vladimir\Documents\GitHub\RSOI_KURS\RSOI_KURS\CalculateService\CalculateService\bin\Debug\netcoreapp2.0\RabbitDLL.dll
+C:\Users\Vladimir\Documents\GitHub\RSOI_KURS\RSOI_KURS\CalculateService\CalculateService\bin\Debug\netcoreapp2.0\RabbitDLL.pdb
+C:\Users\Vladimir\Documents\GitHub\RSOI_KURS\RSOI_KURS\CalculateService\CalculateService\obj\Debug\netcoreapp2.0\CalculateService.csproj.CopyComplete

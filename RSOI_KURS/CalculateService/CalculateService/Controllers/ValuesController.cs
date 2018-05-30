@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using RabbitDLL;
 
 namespace CalculateService.Controllers
 {
@@ -23,10 +26,18 @@ namespace CalculateService.Controllers
             return "value";
         }
 
+        /// <summary>
+        /// Сюда приходит таблица пользователя и таблица соответствия продукта категории. на выходе набор продуктов для коробки
+        /// </summary>
+        /// <param name="value"></param>
         // POST api/values
         [HttpPost]
         public void Post([FromBody]string value)
         {
+            string result = QueryClient.SendQueryToService(HttpMethod.Get, "http://localhost:51229", "/api/products/full/cortege", null, null).Result;
+            FullView objectToView = JsonConvert.DeserializeObject<FullView>(result);
+
+            
         }
 
         // PUT api/values/5

@@ -19,35 +19,58 @@ namespace AggregationService.Controllers
     {
         public IActionResult Index()
         {
+            string user = HttpContext.Session.GetString("Login");
+            user = user != null ? user : "";
+            StatisticSender.SendStatistic("Home", DateTime.Now, "Index", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user);
             return View();
+        }
+
+        [Route("Users")]
+        public IActionResult GetUsers()
+        {
+            string user = HttpContext.Session.GetString("Login");
+            user = user != null ? user : "";
+            string result = QueryClient.SendQueryToService(HttpMethod.Get, RabbitDLL.Linker.Users, "/api/users", null, null).Result;
+            List<User> objectToView = JsonConvert.DeserializeObject<List<User>>(result);
+            StatisticSender.SendStatistic("Home", DateTime.Now, "GetUsers", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user);
+            return View(objectToView);
         }
 
         [Route("AllItems")]
         [Authorize(Policy = "Admin")]
         public IActionResult AllItems()
         {
-            string result = QueryClient.SendQueryToService(HttpMethod.Get, "http://localhost:51229", "/api/products/full/cortege", null, null).Result;
+            string result = QueryClient.SendQueryToService(HttpMethod.Get, RabbitDLL.Linker.Products, "/api/products/full/cortege", null, null).Result;
             FullView objectToView = JsonConvert.DeserializeObject<FullView>(result);
-            
+            string user = HttpContext.Session.GetString("Login");
+            user = user != null ? user : "";
+            StatisticSender.SendStatistic("Home", DateTime.Now, "All items", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user);
             return View(objectToView);
         }
 
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
-
+            string user = HttpContext.Session.GetString("Login");
+            user = user != null ? user : "";
+            StatisticSender.SendStatistic("Home", DateTime.Now, "About", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user);
             return View();
         }
 
         public IActionResult Contact()
         {
             ViewData["Message"] = "Your contact page.";
-
+            string user = HttpContext.Session.GetString("Login");
+            user = user != null ? user : "";
+            StatisticSender.SendStatistic("Home", DateTime.Now, "Contacts", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user);
             return View();
         }
 
         public IActionResult Error()
         {
+            string user = HttpContext.Session.GetString("Login");
+            user = user != null ? user : "";
+            StatisticSender.SendStatistic("Home", DateTime.Now, "Error", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user);
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
 
@@ -56,7 +79,7 @@ namespace AggregationService.Controllers
         {
             string user = HttpContext.Session.GetString("Login");
             user = user != null ? user : "";
-            StatisticSender.SendStatistic("Default", DateTime.Now, "LogOut", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user);
+            StatisticSender.SendStatistic("Home", DateTime.Now, "LogOut", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user);
             HttpContext.Session.SetString("Token", "");
             HttpContext.Session.SetString("Login", "");
             return RedirectToAction(nameof(Index));
@@ -67,7 +90,7 @@ namespace AggregationService.Controllers
         {
             string user = HttpContext.Session.GetString("Login");
             user = user != null ? user : "";
-            StatisticSender.SendStatistic("Default", DateTime.Now, "Registration Start", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user);
+            StatisticSender.SendStatistic("Home", DateTime.Now, "Registration Start", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user);
             return View();
         }
 
@@ -81,14 +104,20 @@ namespace AggregationService.Controllers
             values.Add("Password", user.Password);
             values.Add("Role", "User");
 
+            string usr = HttpContext.Session.GetString("Login");
+            usr = usr != null ? usr : "";
+
             try
             {
                 var result = await QueryClient.SendQueryToService(HttpMethod.Post, "http://localhost:54196", "/api/Users", null, values);
                 User resultUser = JsonConvert.DeserializeObject<User>(result);
+
+                StatisticSender.SendStatistic("Home", DateTime.Now, "Registration", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, usr);
                 return RedirectToAction("Authorisation");
             }
             catch
             {
+                StatisticSender.SendStatistic("Home", DateTime.Now, "Registration", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, usr);
                 return View("Error", "Cannot create this User");
             }
         }
@@ -98,7 +127,7 @@ namespace AggregationService.Controllers
         {
             string user = HttpContext.Session.GetString("Login");
             user = user != null ? user : "";
-            StatisticSender.SendStatistic("Default", DateTime.Now, "Authorisation Start", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user);
+            StatisticSender.SendStatistic("Home", DateTime.Now, "Authorisation Start", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user);
             return View();
         }
 
@@ -109,7 +138,7 @@ namespace AggregationService.Controllers
         {
             string user1 = HttpContext.Session.GetString("Login");
             user1 = user1 != null ? user1 : "";
-            StatisticSender.SendStatistic("Default", DateTime.Now, "Authorisation Ends", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user1);
+            StatisticSender.SendStatistic("Home", DateTime.Now, "Authorisation Ends", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user1);
             return await privateAuth(user);
         }
 

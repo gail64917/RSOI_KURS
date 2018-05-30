@@ -1456,3 +1456,481 @@ Status: OK
 
 
 
+6366313127380286618 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+6366313127380286618 - Response: Date: Mon, 28 May 2018 16:07:53 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+6366313127421856709 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiOGIyNTliMjgtOGNmYi00MmY5LWE2NDEtNDc2ZmRmMDQ1Mjk4IiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NTM1NjczLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.Xt1iyd1oTECq-ECzXr_BwijSyi3dnwOjTJ5CPZK8-Vg"
+}
+
+6366313127421856709 - Response: Date: Mon, 28 May 2018 16:07:53 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiOGIyNTliMjgtOGNmYi00MmY5LWE2NDEtNDc2ZmRmMDQ1Mjk4IiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NTM1NjczLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.Xt1iyd1oTECq-ECzXr_BwijSyi3dnwOjTJ5CPZK8-Vg"}
+
+
+
+63663131278750252111 - Request: SERVICE: ArtistService 
+GET: http://localhost:51229//api/products/full/cortege
+Accept: application/json
+
+
+63663131278750252111 - Response: Date: Mon, 28 May 2018 16:07:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxwcm9kdWN0c1xmdWxsXGNvcnRlZ2U=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"categoryCollection":["For Erudite","For Men","For Woman"],"productCollection":[{"productName":"Harry Potter","categoryParameters":{"For Erudite":10,"For Men":7,"For Woman":7},"cost":2000.0,"count":1},{"productName":"The Witcher 3","categoryParameters":{"For Erudite":3,"For Men":5,"For Woman":3},"cost":2500.0,"count":2}]}
+
+
+
+6366323690239007058 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+6366323690239007058 - Response: Date: Tue, 29 May 2018 21:28:22 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+63663236902791755616 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiMTNjZTEzMGQtMTliNS00ODRmLTg2YzEtZmIzYmI5N2Y1OGM5IiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NjQxMzAyLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.8zrkYCvdlRv9Ijx5BhOqIb2WG6tT6j42m2dmltmW720"
+}
+
+63663236902791755616 - Response: Date: Tue, 29 May 2018 21:28:22 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiMTNjZTEzMGQtMTliNS00ODRmLTg2YzEtZmIzYmI5N2Y1OGM5IiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NjQxMzAyLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.8zrkYCvdlRv9Ijx5BhOqIb2WG6tT6j42m2dmltmW720"}
+
+
+
+63663237119392887910 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+63663237119392887910 - Response: Date: Tue, 29 May 2018 21:31:59 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+6366323711978772168 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiMjFmOWIwNDktMjM0ZS00OGNmLTlhZmUtNDdjZjczZGFjMTM4IiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NjQxNTE5LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.PH-buleOSK2XsV0EDhbs1TugldOrWE0qlJto38WcOLA"
+}
+
+6366323711978772168 - Response: Date: Tue, 29 May 2018 21:31:59 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiMjFmOWIwNDktMjM0ZS00OGNmLTlhZmUtNDdjZjczZGFjMTM4IiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NjQxNTE5LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.PH-buleOSK2XsV0EDhbs1TugldOrWE0qlJto38WcOLA"}
+
+
+
+63663237280089370010 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+63663237280089370010 - Response: Date: Tue, 29 May 2018 21:34:40 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+63663237280609817916 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiYjQ1N2IzODItNmYyMC00YTBkLThkYjMtY2M2MWZlNjYxNDg4IiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NjQxNjgwLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.X8qcJMiBPWwjQQpkIn0Gpr_UJfSmMIx1N5bjzuIgmNU"
+}
+
+63663237280609817916 - Response: Date: Tue, 29 May 2018 21:34:40 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiYjQ1N2IzODItNmYyMC00YTBkLThkYjMtY2M2MWZlNjYxNDg4IiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NjQxNjgwLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.X8qcJMiBPWwjQQpkIn0Gpr_UJfSmMIx1N5bjzuIgmNU"}
+
+
+
+6366323749170246848 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+6366323749170246848 - Response: Date: Tue, 29 May 2018 21:38:11 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+63663237492397205710 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiYmJkOWZjMzMtODJjMS00ZThlLTkzYTUtNjE1MDY2N2EwNTRiIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NjQxODkxLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.Ex8PLOJLjoUYpgUI0JvbJL_XGg3CsrwY7r8P7DuBDdE"
+}
+
+63663237492397205710 - Response: Date: Tue, 29 May 2018 21:38:11 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiYmJkOWZjMzMtODJjMS00ZThlLTkzYTUtNjE1MDY2N2EwNTRiIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NjQxODkxLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.Ex8PLOJLjoUYpgUI0JvbJL_XGg3CsrwY7r8P7DuBDdE"}
+
+
+
+6366323785001229198 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+6366323785001229198 - Response: Date: Tue, 29 May 2018 21:44:09 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+63663237850464000410 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiNThmMjE4MTgtZDMxYS00ZWYyLWEzMTMtMTU3YWFiNDJlYmRmIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NjQyMjUwLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.l0m6kq6FxltfvGO8e_QwOezt0K4FiU7izXIgfrLHFnw"
+}
+
+63663237850464000410 - Response: Date: Tue, 29 May 2018 21:44:09 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiNThmMjE4MTgtZDMxYS00ZWYyLWEzMTMtMTU3YWFiNDJlYmRmIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NjQyMjUwLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.l0m6kq6FxltfvGO8e_QwOezt0K4FiU7izXIgfrLHFnw"}
+
+
+
+6366323785313605268 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/products/full/cortege
+Accept: application/json
+
+
+6366323785313605268 - Response: Date: Tue, 29 May 2018 21:44:13 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxwcm9kdWN0c1xmdWxsXGNvcnRlZ2U=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"categoryCollection":["For Erudite","For Men","For Woman"],"productCollection":[{"productName":"Harry Potter","categoryParameters":{"For Erudite":10,"For Men":7,"For Woman":7},"cost":2000.0,"count":1},{"productName":"The Witcher 3","categoryParameters":{"For Erudite":3,"For Men":5,"For Woman":3},"cost":2500.0,"count":2}]}
+
+
+
+63663252908815731824 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Gail",
+  "Password": "64917"
+}
+
+63663252908815731824 - Response: Date: Wed, 30 May 2018 01:55:08 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1002,"login":"Gail","password":"e73bcf7abea548863c7ffdb0555fd03f","role":"User","lastToken":null}
+
+
+
+63663252909247170424 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1002
+Accept: application/json
+
+{
+  "id": 1002,
+  "login": "Gail",
+  "password": "e73bcf7abea548863c7ffdb0555fd03f",
+  "role": "User",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJHYWlsIiwianRpIjoiOTIxYTBhYjUtZjBkOS00MWU2LWFmNTctYzY5ZDNlNWZhYTBiIiwiVXNlciI6IjEwMDIiLCJleHAiOjE1Mjc2NTczMDgsImlzcyI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIiwiYXVkIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIifQ.8liP76JuZrhyMsJc41VlmSaFyN8eiiNeGhEYAB-lkLI"
+}
+
+63663252909247170424 - Response: Date: Wed, 30 May 2018 01:55:08 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wxMDAy?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1002,"login":"Gail","password":"e73bcf7abea548863c7ffdb0555fd03f","role":"User","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJHYWlsIiwianRpIjoiOTIxYTBhYjUtZjBkOS00MWU2LWFmNTctYzY5ZDNlNWZhYTBiIiwiVXNlciI6IjEwMDIiLCJleHAiOjE1Mjc2NTczMDgsImlzcyI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIiwiYXVkIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIifQ.8liP76JuZrhyMsJc41VlmSaFyN8eiiNeGhEYAB-lkLI"}
+
+
+
+63663252920250648024 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+63663252920250648024 - Response: Date: Wed, 30 May 2018 01:55:20 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+63663252920349960528 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiZjkxZjAzZjUtMjBjNS00M2NkLWEwYTAtNDg5MGYxZDg0YmFkIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NjU3MzIwLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.sqW6TDZ3rhuKDOcCuzT2Ll3EnPe-FhhlfjEuCvYdJP4"
+}
+
+63663252920349960528 - Response: Date: Wed, 30 May 2018 01:55:20 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiZjkxZjAzZjUtMjBjNS00M2NkLWEwYTAtNDg5MGYxZDg0YmFkIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NjU3MzIwLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.sqW6TDZ3rhuKDOcCuzT2Ll3EnPe-FhhlfjEuCvYdJP4"}
+
+
+
+6366325341170749219 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+6366325341170749219 - Response: Date: Wed, 30 May 2018 02:03:31 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+6366325341221123308 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiMWM4NjRiODktZTc1YS00ODA3LWJmMGQtMGM1YjA5MzViZTc4IiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NjU3ODExLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.s8CQ4vyQUb0EvAWg7NcoOjmej1tLC5w3D96EDVFhjdY"
+}
+
+6366325341221123308 - Response: Date: Wed, 30 May 2018 02:03:31 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiMWM4NjRiODktZTc1YS00ODA3LWJmMGQtMGM1YjA5MzViZTc4IiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NjU3ODExLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.s8CQ4vyQUb0EvAWg7NcoOjmej1tLC5w3D96EDVFhjdY"}
+
+
+
+6366325465066585519 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+6366325465066585519 - Response: Date: Wed, 30 May 2018 02:24:10 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+6366325465107340269 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiMmNkN2Q3MTItYWJhMi00ZWI0LWI4NWUtZDM1NTViMTk5ZWNjIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NjU5MDUwLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.JLeMkEkVbqyurkpCz7_rKBrfxQwh64l8mWuwzWXWM4E"
+}
+
+6366325465107340269 - Response: Date: Wed, 30 May 2018 02:24:10 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiMmNkN2Q3MTItYWJhMi00ZWI0LWI4NWUtZDM1NTViMTk5ZWNjIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NjU5MDUwLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.JLeMkEkVbqyurkpCz7_rKBrfxQwh64l8mWuwzWXWM4E"}
+
+
+
+6366325475365867468 - Request: SERVICE: ArtistService 
+GET: http://localhost:54196//api/users
+Accept: application/json
+
+
+6366325475365867468 - Response: Date: Wed, 30 May 2018 02:25:53 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVx1c2Vycw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiMmNkN2Q3MTItYWJhMi00ZWI0LWI4NWUtZDM1NTViMTk5ZWNjIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NjU5MDUwLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.JLeMkEkVbqyurkpCz7_rKBrfxQwh64l8mWuwzWXWM4E"},{"id":2,"login":"Georg","password":"0eaa49b13340bc2514b45219c7428742","role":"User","lastToken":null},{"id":1002,"login":"Gail","password":"e73bcf7abea548863c7ffdb0555fd03f","role":"User","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJHYWlsIiwianRpIjoiOTIxYTBhYjUtZjBkOS00MWU2LWFmNTctYzY5ZDNlNWZhYTBiIiwiVXNlciI6IjEwMDIiLCJleHAiOjE1Mjc2NTczMDgsImlzcyI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIiwiYXVkIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIifQ.8liP76JuZrhyMsJc41VlmSaFyN8eiiNeGhEYAB-lkLI"}]
+
+
+

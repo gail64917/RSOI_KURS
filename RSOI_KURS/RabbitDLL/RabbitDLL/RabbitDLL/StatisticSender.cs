@@ -27,7 +27,7 @@ namespace RabbitDLL
             var message = rbt;
 
             //отправляем его в очередь
-            bus.Publish(message);
+            //bus.Publish(message);
             bus.Send("statistic", message);
         }
     }

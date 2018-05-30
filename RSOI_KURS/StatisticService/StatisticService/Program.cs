@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using EasyNetQ;
 using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using RabbitDLL;
+using StatisticService.Controllers;
+using StatisticService.Data;
+using System;
 
 namespace StatisticService
 {
@@ -14,7 +14,25 @@ namespace StatisticService
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
+            var host = BuildWebHost(args);
+
+            using (var scope = host.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                try
+                {
+                    var context = services.GetRequiredService<StatContext>();
+                    DbInitializer.Initialize(context);
+                }
+                catch (Exception ex)
+                {
+                    var logger = services.GetRequiredService<ILogger<Program>>();
+                    logger.LogError(ex, "An error occurred while seeding the database.");
+                }
+            }
+            var bus = RabbitHutch.CreateBus("host=localhost");
+            bus.Subscribe<Statistic>("statistic", msg => StatisticsController.DbPush(msg)); //????????????????????????
+            host.Run();
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
