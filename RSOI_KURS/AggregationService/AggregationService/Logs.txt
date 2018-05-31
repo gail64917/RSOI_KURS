@@ -1934,3 +1934,137 @@ Status: OK
 
 
 
+63663339521934931710 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+63663339521934931710 - Response: Date: Thu, 31 May 2018 01:58:41 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+63663339522383604511 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiNzBjNjE5YzktY2JlZi00YjdmLTg0ZTEtZjlkNmM2OTRiNmNlIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NzQzOTIyLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.p9u_ItvgAcMHQCcyseGyIM9lmZEdulUvc4nHK1gQn-w"
+}
+
+63663339522383604511 - Response: Date: Thu, 31 May 2018 01:58:41 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiNzBjNjE5YzktY2JlZi00YjdmLTg0ZTEtZjlkNmM2OTRiNmNlIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NzQzOTIyLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.p9u_ItvgAcMHQCcyseGyIM9lmZEdulUvc4nHK1gQn-w"}
+
+
+
+63663339526133577410 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/products/full/cortege
+Accept: application/json
+
+
+63663339526133577410 - Response: Date: Thu, 31 May 2018 01:58:46 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxwcm9kdWN0c1xmdWxsXGNvcnRlZ2U=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"categoryCollection":["For Erudite","For Men","For Woman"],"productCollection":[{"productName":"Harry Potter","categoryParameters":{"For Erudite":10,"For Men":7,"For Woman":7},"cost":2000.0,"count":1},{"productName":"The Witcher 3","categoryParameters":{"For Erudite":3,"For Men":5,"For Woman":3},"cost":2500.0,"count":2}]}
+
+
+
+63663339554541285216 - Request: SERVICE: ArtistService 
+GET: http://localhost:54196//api/users
+Accept: application/json
+
+
+63663339554541285216 - Response: Date: Thu, 31 May 2018 01:59:14 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVx1c2Vycw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiNzBjNjE5YzktY2JlZi00YjdmLTg0ZTEtZjlkNmM2OTRiNmNlIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NzQzOTIyLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.p9u_ItvgAcMHQCcyseGyIM9lmZEdulUvc4nHK1gQn-w"},{"id":2,"login":"Georg","password":"0eaa49b13340bc2514b45219c7428742","role":"User","lastToken":null},{"id":1002,"login":"Gail","password":"e73bcf7abea548863c7ffdb0555fd03f","role":"User","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJHYWlsIiwianRpIjoiOTIxYTBhYjUtZjBkOS00MWU2LWFmNTctYzY5ZDNlNWZhYTBiIiwiVXNlciI6IjEwMDIiLCJleHAiOjE1Mjc2NTczMDgsImlzcyI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIiwiYXVkIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIifQ.8liP76JuZrhyMsJc41VlmSaFyN8eiiNeGhEYAB-lkLI"}]
+
+
+
+6366334310113114359 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+6366334310113114359 - Response: Date: Thu, 31 May 2018 02:58:21 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+63663343101732851210 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiZjQ1ZWVkZjAtYjUzMi00MjMzLTk0ZjAtYmQzZTBlNzA1Y2MxIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NzQ3NTAxLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.WIJ3gvrHDz6Dq82N1TC_ZAxOx-jlbZApGRBbROlrQIA"
+}
+
+63663343101732851210 - Response: Date: Thu, 31 May 2018 02:58:21 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiZjQ1ZWVkZjAtYjUzMi00MjMzLTk0ZjAtYmQzZTBlNzA1Y2MxIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NzQ3NTAxLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.WIJ3gvrHDz6Dq82N1TC_ZAxOx-jlbZApGRBbROlrQIA"}
+
+
+
+6366334310447427269 - Request: SERVICE: ArtistService 
+GET: http://localhost:61478//api/OrderItems
+Accept: application/json
+
+
+6366334310447427269 - Response: Date: Thu, 31 May 2018 02:58:24 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXE9yZGVyU2VydmljZVxPcmRlclNlcnZpY2VcYXBpXE9yZGVySXRlbXM=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productsInBox":"Harry Potter=2","adress":"Geroyev Panfilovcev, 14/53","cost":3000.0,"userInfo":"Vladimir","deliveryInfo":"Во второй половине дня, номер для связи +7925ххххххх"},{"id":2,"productsInBox":"Harry Potter=1;The Witcher 3=1","adress":"Фрязино, пр. Мира, 10/40","cost":2300.0,"userInfo":"Наталия","deliveryInfo":"Перед доставкой позвонить, номер для связи +7926ххххххх"}]
+
+
+

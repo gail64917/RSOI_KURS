@@ -1,0 +1,65 @@
+﻿@model IEnumerable<RabbitDLL.OrderItems>
+
+@{
+    ViewData["Title"] = "GetOrders";
+}
+
+<h2>GetOrders</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ID)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.productsInBox)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Adress)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Cost)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UserInfo)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.DeliveryInfo)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.productsInBox)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Adress)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cost)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserInfo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeliveryInfo)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

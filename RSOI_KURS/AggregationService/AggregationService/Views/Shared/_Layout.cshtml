@@ -37,18 +37,7 @@
                 <ul class="nav navbar-nav">
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-
-                        </ul>
-                    </li>
-                </ul>
-                <ul class="nav navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
-                        <ul class="dropdown-menu">
-                            <li><a id="submitButton" class="pointer">All Items</a></li>
-                            <li><a asp-area="" asp-controller="Home" asp-action="GetUsers" asp-route-id="1">All Users</a></li>
-                        </ul>
+                        <ul class="dropdown-menu"></ul>
                     </li>
                 </ul>
                 @{
@@ -71,7 +60,7 @@
                     });
                 });
             </script>
-        }
+}
 if (token != null && System.Text.Encoding.Default.GetString(token) != "")
 {
 tokenStringJS = System.Text.Encoding.Default.GetString(token);
@@ -97,12 +86,26 @@ tokenStringJS = System.Text.Encoding.Default.GetString(token);
                                 });
                             });
             </script>
+            @if (System.Text.Encoding.Default.GetString(login) == "Vova")
+{
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Admin<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a id="submitButton" class="pointer">All Items</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="GetUsers" asp-route-id="1">All Users</a></li>
+                        <li><a asp-area="" asp-controller="Home" asp-action="GetOrders" asp-route-id="1">All Orders</a></li>
+                    </ul>
+                </li>
+            </ul>
+}
+
 tokenString = System.Text.Encoding.Default.GetString(token);
 }
 
 if (tokenString == "")
 {
-            tokenString = "false";
+tokenString = "false";
             <ul class="nav navbar-nav navbar-right">
                 <li><a asp-area="" asp-controller="Home" asp-action="Registration" asp-route-id="1">Registration</a></li>
                 <li><a asp-area="" asp-controller="Home" asp-action="Authorisation" asp-route-id="1">Authorisation</a></li>
@@ -112,10 +115,10 @@ else
 {
             <ul class="nav navbar-nav navbar-right">
                 @{
-                    if (token != null && System.Text.Encoding.Default.GetString(token) != "")
-                    {
-                        string loginString = System.Text.Encoding.Default.GetString(login);
-                    }
+        if (token != null && System.Text.Encoding.Default.GetString(token) != "")
+        {
+            string loginString = System.Text.Encoding.Default.GetString(login);
+        }
                 }
                 <li><a asp-area="">Hello, @System.Text.Encoding.Default.GetString(login)</a></li>
                 <li><a asp-area="" asp-controller="Home" asp-action="LogOut" asp-route-id="1">Log Out</a></li>

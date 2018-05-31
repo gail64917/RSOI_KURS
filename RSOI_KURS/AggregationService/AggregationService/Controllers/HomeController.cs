@@ -36,6 +36,17 @@ namespace AggregationService.Controllers
             return View(objectToView);
         }
 
+        [Route("Orders")]
+        public IActionResult GetOrders()
+        {
+            string user = HttpContext.Session.GetString("Login");
+            user = user != null ? user : "";
+            string result = QueryClient.SendQueryToService(HttpMethod.Get, RabbitDLL.Linker.Orders, "/api/OrderItems", null, null).Result;
+            List<OrderItems> objectToView = JsonConvert.DeserializeObject<List<OrderItems>>(result);
+            StatisticSender.SendStatistic("Home", DateTime.Now, "GetOrders", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user);
+            return View(objectToView);
+        }
+
         [Route("AllItems")]
         [Authorize(Policy = "Admin")]
         public IActionResult AllItems()
