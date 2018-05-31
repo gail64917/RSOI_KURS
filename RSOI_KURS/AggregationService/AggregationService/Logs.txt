@@ -2068,3 +2068,19 @@ Status: OK
 
 
 
+6366335838938997469 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+6366335838938997469 - Response: Date: Thu, 31 May 2018 07:13:09 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}]
+
+
+

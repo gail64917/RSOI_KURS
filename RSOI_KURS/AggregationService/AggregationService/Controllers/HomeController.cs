@@ -30,10 +30,17 @@ namespace AggregationService.Controllers
         {
             string user = HttpContext.Session.GetString("Login");
             user = user != null ? user : "";
-            string result = QueryClient.SendQueryToService(HttpMethod.Get, RabbitDLL.Linker.Users, "/api/users", null, null).Result;
-            List<User> objectToView = JsonConvert.DeserializeObject<List<User>>(result);
-            StatisticSender.SendStatistic("Home", DateTime.Now, "GetUsers", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user);
-            return View(objectToView);
+            try
+            {
+                string result = QueryClient.SendQueryToService(HttpMethod.Get, RabbitDLL.Linker.Users, "/api/users", null, null).Result;
+                List<User> objectToView = JsonConvert.DeserializeObject<List<User>>(result);
+                StatisticSender.SendStatistic("Home", DateTime.Now, "GetUsers", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user);
+                return View(objectToView);
+            }
+            catch
+            {
+                return View("Error", "Service of Users unavailable");
+            }
         }
 
         [Route("Orders")]
@@ -42,21 +49,53 @@ namespace AggregationService.Controllers
             string user = HttpContext.Session.GetString("Login");
             user = user != null ? user : "";
             string result = QueryClient.SendQueryToService(HttpMethod.Get, RabbitDLL.Linker.Orders, "/api/OrderItems", null, null).Result;
-            List<OrderItems> objectToView = JsonConvert.DeserializeObject<List<OrderItems>>(result);
-            StatisticSender.SendStatistic("Home", DateTime.Now, "GetOrders", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user);
-            return View(objectToView);
+            try
+            {
+                List<OrderItems> objectToView = JsonConvert.DeserializeObject<List<OrderItems>>(result);
+                StatisticSender.SendStatistic("Home", DateTime.Now, "GetOrders", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user);
+                return View(objectToView);
+            }
+            catch
+            {
+                return View("Error", "Service of Orders Unavailable");
+            }
+        }
+
+        [Route("Products")]
+        public IActionResult GetProducts()
+        {
+            string user = HttpContext.Session.GetString("Login");
+            user = user != null ? user : "";
+            try
+            {
+                string result = QueryClient.SendQueryToService(HttpMethod.Get, RabbitDLL.Linker.Products, "/api/Products", null, null).Result;
+                List<Product> objectToView = JsonConvert.DeserializeObject<List<Product>>(result);
+                StatisticSender.SendStatistic("Home", DateTime.Now, "GetOrders", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user);
+                return View(objectToView);
+            }
+            catch
+            {
+                return View("Error", "Service of Orders unavailable");
+            }
         }
 
         [Route("AllItems")]
         [Authorize(Policy = "Admin")]
         public IActionResult AllItems()
         {
-            string result = QueryClient.SendQueryToService(HttpMethod.Get, RabbitDLL.Linker.Products, "/api/products/full/cortege", null, null).Result;
-            FullView objectToView = JsonConvert.DeserializeObject<FullView>(result);
-            string user = HttpContext.Session.GetString("Login");
-            user = user != null ? user : "";
-            StatisticSender.SendStatistic("Home", DateTime.Now, "All items", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user);
-            return View(objectToView);
+            try
+            {
+                string result = QueryClient.SendQueryToService(HttpMethod.Get, RabbitDLL.Linker.Products, "/api/products/full/cortege", null, null).Result;
+                FullView objectToView = JsonConvert.DeserializeObject<FullView>(result);
+                string user = HttpContext.Session.GetString("Login");
+                user = user != null ? user : "";
+                StatisticSender.SendStatistic("Home", DateTime.Now, "All items", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, user);
+                return View(objectToView);
+            }
+            catch
+            {
+                return View("Error", "Service of Products unavailable");
+            }
         }
 
         public IActionResult About()
@@ -129,7 +168,7 @@ namespace AggregationService.Controllers
             catch
             {
                 StatisticSender.SendStatistic("Home", DateTime.Now, "Registration", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, usr);
-                return View("Error", "Cannot create this User");
+                return View("Error", "Cannot create this User. Try again later or input another Data");
             }
         }
 
@@ -166,12 +205,12 @@ namespace AggregationService.Controllers
                 }
                 else
                 {
-                    return View("Error", "User input incorrect");
+                    return View("Error", "User input incorrect or Service unavailable");
                 }
             }
             else
             {
-                return View("Error", "User input incorrect");
+                return View("Error", "User input incorrect or Service unavailable");
             }
         }
     }

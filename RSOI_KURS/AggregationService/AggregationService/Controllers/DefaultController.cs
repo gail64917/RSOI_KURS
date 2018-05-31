@@ -20,9 +20,15 @@ namespace AggregationService.Controllers
             var values = new JObject();
             values.Add("Login", user.Login);
             values.Add("LastToken", user.LastToken);
-
-            var result = await QueryClient.SendQueryToService(HttpMethod.Post, "http://localhost:54196", "/api/Users/Find", null, values);
-            return JsonConvert.DeserializeObject<User>(result);
+            try
+            {
+                var result = await QueryClient.SendQueryToService(HttpMethod.Post, "http://localhost:54196", "/api/Users/Find", null, values);
+                return JsonConvert.DeserializeObject<User>(result);
+            }
+            catch
+            {
+                return null;
+            }
         }
 
         public static async Task<User> privateWeakCheckByPassword(User user)
@@ -31,8 +37,15 @@ namespace AggregationService.Controllers
             values.Add("Login", user.Login);
             values.Add("Password", user.Password);
 
-            var result = await QueryClient.SendQueryToService(HttpMethod.Post, "http://localhost:54196", "/api/Users/Find", null, values);
-            return JsonConvert.DeserializeObject<User>(result);
+            try
+            {
+                var result = await QueryClient.SendQueryToService(HttpMethod.Post, "http://localhost:54196", "/api/Users/Find", null, values);
+                return JsonConvert.DeserializeObject<User>(result);
+            }
+            catch
+            {
+                return null;
+            }
         }
     }
 }
