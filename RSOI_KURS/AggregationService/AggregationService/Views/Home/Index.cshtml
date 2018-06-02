@@ -1,7 +1,14 @@
-﻿@{
+﻿@model RabbitDLL.Anket
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
+<style>
+    .colortext {
+        color: #000; /* Цвет текста */
+    }
+</style>
 
 <form method="post" asp-action="SubmitAnket" asp-controller="Home">
     <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="15000">
@@ -10,59 +17,91 @@
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
             <li data-target="#myCarousel" data-slide-to="3"></li>
-            <li data-target="#myCarousel" data-slide-to="4"></li>
-            <li data-target="#myCarousel" data-slide-to="5"></li>
+            @*<li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="5"></li>*@
         </ol>
         <div class="carousel-inner" role="listbox">
             <div class="item active">
-                <img src="~/images/1.png" alt="ASP.NET" class="img-responsive" />
-                <div class="carousel-caption" role="option">
+                <img src="~/images/1.jpg" alt="ASP.NET" class="img-responsive" />
+                <div class="carousel-caption" role="article">
+
+                    <br />
+                    Введите ваше имя:  <br /><input class="colortext" asp-for="Name" /> <br />
+                    <br />
+
+                    <br />
+                    Кому дарите:  <br /><input class="colortext" asp-for="InfoTarget" /> <br />
+                    <br />
+
+                    <br />
+                    Максимальная цена, которую готовы потратить:  <br /><input class="colortext" asp-for="Money" /> <br />
+                    <br />
+
+                    <br />
+                    Адресс доставки:  <br /><input class="colortext" asp-for="Adress" /> <br />
+                    <span asp-validation-for="Adress"></span><br />
+                    <br />
+
+                    <br />
+                    Как с вами связаться (email):  <br /><input class="colortext" asp-for="Email" /> <br />
+                    <span asp-validation-for="Email"></span><br />
+                    <br />
+
                     <p>
                         Сведения о заказе
                     </p>
                 </div>
             </div>
             <div class="item">
-                <img src="~/images/2.png" alt="Visual Studio" class="img-responsive" />
+                <img src="~/images/2.jpg" alt="Visual Studio" class="img-responsive" />
                 <div class="carousel-caption" role="option">
+                    <br />
+                    Оцените по 10-бальной шкале увлечение того, кому дарите подарок, компьютером:  <br /><input class="colortext" asp-for="Computer" /> <br />
+                    <span asp-validation-for="Computer"></span><br />
+                    <br />
                     <p>
                         Первая страница анкеты
                     </p>
                 </div>
             </div>
             <div class="item">
-                <img src="~/images/3.png" alt="Package Management" class="img-responsive" />
+                <img src="~/images/3.jpg" alt="Package Management" class="img-responsive" />
                 <div class="carousel-caption" role="option">
+                    <br />
+                    Оцените по 10-бальной шкале увлечение того, кому дарите подарок, Книгами:  <br /><input class="colortext" asp-for="Book" /> <br />
+                    <span asp-validation-for="Book"></span><br />
+                    <br />
                     <p>
                         Вторая страница анкеты
                     </p>
                 </div>
             </div>
             <div class="item">
-                <img src="~/images/4.png" alt="Microsoft Azure" class="img-responsive" />
+                <img src="~/images/4.jpg" alt="Microsoft Azure" class="img-responsive" />
                 <div class="carousel-caption" role="option">
                     <p>
-                        Третья страница анкеты
+                        Отправка формы!
                     </p>
+                    <input class="btn btn-success" type="submit" value="Отправить результаты" />
                 </div>
             </div>
-            <div class="item">
-                <img src="~/images/5.png" alt="Microsoft Azure" class="img-responsive" />
-                <div class="carousel-caption" role="option">
-                    <p>
-                        Четвертая страница анкеты
-                    </p>
+            @*<div class="item">
+                    <img src="~/images/5.png" alt="Microsoft Azure" class="img-responsive" />
+                    <div class="carousel-caption" role="option">
+                        <p>
+                            Четвертая страница анкеты
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <img src="~/images/6.png" alt="Microsoft Azure" class="img-responsive" />
-                <div class="carousel-caption" role="option">
-                    <p>
-                        Сведения о заказе и доп. инфо
-                    </p>
-                    <input type="submit" value="Отправить результаты" class="btn btn-success"/>
-                </div>
-            </div>
+                <div class="item">
+                    <img src="~/images/6.png" alt="Microsoft Azure" class="img-responsive" />
+                    <div class="carousel-caption" role="option">
+                        <p>
+                            Сведения о заказе и доп. инфо
+                        </p>
+
+                    </div>
+                </div>*@
         </div>
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -75,5 +114,5 @@
     </div>
 
 
-    
+
 </form>

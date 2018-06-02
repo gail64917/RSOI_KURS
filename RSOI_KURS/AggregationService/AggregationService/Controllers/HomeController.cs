@@ -79,6 +79,87 @@ namespace AggregationService.Controllers
             }
         }
 
+        [Route("Products/Create")]
+        public IActionResult CreateProduct()
+        {
+            return View();
+        }
+
+        [Route("Products/Edite/{id?}")]
+        public IActionResult EditeProduct(int? id)
+        {
+            string result = QueryClient.SendQueryToService(HttpMethod.Get, RabbitDLL.Linker.Products, "/api/Products/"+id, null, null).Result;
+            Product objectToView = JsonConvert.DeserializeObject<Product>(result);
+            return View(objectToView);
+        }
+
+        [HttpPost]
+        [Route("Products/Edite/{id?}")]
+        public IActionResult EditeProduct(int? id, [Bind("ID,ProductCategory", "ProductName", "Cost", "CountInBase")] Product prod)
+        {
+            try
+            {
+                var json = new JObject();
+                json.Add("ID", prod.ID);
+                json.Add("ProductCategory", prod.ProductCategory);
+                json.Add("ProductName", prod.ProductName);
+                json.Add("Cost", prod.Cost);
+                json.Add("CountInBase", prod.CountInBase);
+                string result = QueryClient.SendQueryToService(HttpMethod.Put, RabbitDLL.Linker.Products, "/api/Products/"+id, null, json).Result;
+                Product objectToView = JsonConvert.DeserializeObject<Product>(result);
+
+                result = QueryClient.SendQueryToService(HttpMethod.Get, RabbitDLL.Linker.Products, "/api/Products", null, null).Result;
+                List<Product> objectToViewList = JsonConvert.DeserializeObject<List<Product>>(result);
+                return View("GetProducts", objectToViewList);
+            }
+            catch
+            {
+                return View("Error", "Service of Products unavailable or cannot add new Product");
+            }
+        }
+
+        [HttpPost]
+        [Route("Products/Create")]
+        public IActionResult CreateProduct([Bind("ProductCategory","ProductName","Cost","CountInBase")] Product prod)
+        {
+            try
+            {
+                var json = new JObject();
+                json.Add("ProductCategory", prod.ProductCategory);
+                json.Add("ProductName", prod.ProductName);
+                json.Add("Cost", prod.Cost);
+                json.Add("CountInBase", prod.CountInBase);
+                string result = QueryClient.SendQueryToService(HttpMethod.Post, RabbitDLL.Linker.Products, "/api/Products", null, json).Result;
+                Product objectToView = JsonConvert.DeserializeObject<Product>(result);
+
+                result = QueryClient.SendQueryToService(HttpMethod.Get, RabbitDLL.Linker.Products, "/api/Products", null, null).Result;
+                List<Product> objectToViewList = JsonConvert.DeserializeObject<List<Product>>(result);
+                return View("GetProducts", objectToViewList);
+            }
+            catch
+            {
+                return View("Error", "Service of Products unavailable or cannot add new Product");
+            }
+        }
+
+        [Route("Products/Delete/{id?}")]
+        public IActionResult DeleteProduct(int? id)
+        {
+            try
+            {
+                string result = QueryClient.SendQueryToService(HttpMethod.Delete, RabbitDLL.Linker.Products, "/api/Products/"+id, null, null).Result;
+                Product objectToView = JsonConvert.DeserializeObject<Product>(result);
+
+                result = QueryClient.SendQueryToService(HttpMethod.Get, RabbitDLL.Linker.Products, "/api/Products", null, null).Result;
+                List<Product> objectToViewList = JsonConvert.DeserializeObject<List<Product>>(result);
+                return View("GetProducts", objectToViewList);
+            }
+            catch
+            {
+                return View("Error", "Service of Products unavailable or cannot add new Product");
+            }
+        }
+
         [Route("AllItems")]
         [Authorize(Policy = "Admin")]
         public IActionResult AllItems()
@@ -211,6 +292,57 @@ namespace AggregationService.Controllers
             else
             {
                 return View("Error", "User input incorrect or Service unavailable");
+            }
+        }
+
+        [Route("Submit")]
+        [ValidateAntiForgeryToken]
+        [HttpPost]
+        public async Task<IActionResult> SubmitAnket(Anket anket)
+        {
+            OrderItems order = new OrderItems(anket.Adress, anket.Name + ":" + anket.Email, anket.Money, anket.Adress);
+            int BookCost = 2000;
+            int GameCost = 3000;
+
+            if(anket.Book != 0 && anket.Computer != 0)
+            {
+                decimal partBook = anket.Book / (anket.Book + anket.Computer);
+                decimal partComp = anket.Computer / (anket.Book + anket.Computer);
+                int countAllItems = Convert.ToInt32(Convert.ToInt32(anket.Money) / (partBook * BookCost + partComp * GameCost));
+
+                int CountBook = Convert.ToInt32(partBook * countAllItems);
+                int CountGame = Convert.ToInt32(partComp * countAllItems);
+                string OrderItems = "Harry Potter=" + CountBook + "Witcher 3=" + CountGame;
+                order.productsInBox = OrderItems;
+                //api / OrderItems
+
+                var values = new JObject();
+                values.Add("Adress", order.Adress);
+                values.Add("Cost", order.Cost);
+                values.Add("DeliveryInfo", order.DeliveryInfo);
+                values.Add("ProductsInBox", order.productsInBox);
+                values.Add("UserInfo", order.UserInfo);
+
+                string usr = HttpContext.Session.GetString("Login");
+                usr = usr != null ? usr : "";
+
+                try
+                {
+                    var result = await QueryClient.SendQueryToService(HttpMethod.Post, Linker.Orders, "/api/OrderItems", null, values);
+                    OrderItems resultUser = JsonConvert.DeserializeObject<OrderItems>(result);
+
+                    StatisticSender.SendStatistic("Home", DateTime.Now, "Registration", Request.HttpContext.Connection.RemoteIpAddress.ToString(), true, usr);
+                    return View("SuccessSub", resultUser);
+                }
+                catch
+                {
+                    StatisticSender.SendStatistic("Home", DateTime.Now, "Registration", Request.HttpContext.Connection.RemoteIpAddress.ToString(), false, usr);
+                    return View("Error", "Cannot create order");
+                }
+            }
+            else
+            {
+                return View("Index");
             }
         }
     }

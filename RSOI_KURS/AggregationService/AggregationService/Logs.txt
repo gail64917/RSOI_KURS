@@ -2084,3 +2084,1630 @@ Status: OK
 
 
 
+63663368244081994510 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+63663368244081994510 - Response: Date: Thu, 31 May 2018 09:57:23 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+63663368244742808010 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiYTE2MDAyMTUtNTUzMy00MGRmLTgyMDAtMmZiM2YwMzg0YzVjIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NzcyNjQ0LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.ZA-x1Uxdppwpjec-GLq8RQR3rEliec_9wZDRchUJrrI"
+}
+
+63663368244742808010 - Response: Date: Thu, 31 May 2018 09:57:23 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiYTE2MDAyMTUtNTUzMy00MGRmLTgyMDAtMmZiM2YwMzg0YzVjIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NzcyNjQ0LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.ZA-x1Uxdppwpjec-GLq8RQR3rEliec_9wZDRchUJrrI"}
+
+
+
+6366336824840754989 - Request: SERVICE: ArtistService 
+GET: http://localhost:54196//api/users
+Accept: application/json
+
+
+6366336824840754989 - Response: Date: Thu, 31 May 2018 09:57:28 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVx1c2Vycw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiYTE2MDAyMTUtNTUzMy00MGRmLTgyMDAtMmZiM2YwMzg0YzVjIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NzcyNjQ0LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.ZA-x1Uxdppwpjec-GLq8RQR3rEliec_9wZDRchUJrrI"},{"id":2,"login":"Georg","password":"0eaa49b13340bc2514b45219c7428742","role":"User","lastToken":null},{"id":1002,"login":"Gail","password":"e73bcf7abea548863c7ffdb0555fd03f","role":"User","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJHYWlsIiwianRpIjoiOTIxYTBhYjUtZjBkOS00MWU2LWFmNTctYzY5ZDNlNWZhYTBiIiwiVXNlciI6IjEwMDIiLCJleHAiOjE1Mjc2NTczMDgsImlzcyI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIiwiYXVkIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIifQ.8liP76JuZrhyMsJc41VlmSaFyN8eiiNeGhEYAB-lkLI"}]
+
+
+
+63663368252671451227 - Request: SERVICE: ArtistService 
+GET: http://localhost:61478//api/OrderItems
+Accept: application/json
+
+
+63663368252671451227 - Response: Date: Thu, 31 May 2018 09:57:32 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXE9yZGVyU2VydmljZVxPcmRlclNlcnZpY2VcYXBpXE9yZGVySXRlbXM=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productsInBox":"Harry Potter=2","adress":"Geroyev Panfilovcev, 14/53","cost":3000.0,"userInfo":"Vladimir","deliveryInfo":"Во второй половине дня, номер для связи +7925ххххххх"},{"id":2,"productsInBox":"Harry Potter=1;The Witcher 3=1","adress":"Фрязино, пр. Мира, 10/40","cost":2300.0,"userInfo":"Наталия","deliveryInfo":"Перед доставкой позвонить, номер для связи +7926ххххххх"}]
+
+
+
+63663368256324764318 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/products/full/cortege
+Accept: application/json
+
+
+63663368256324764318 - Response: Date: Thu, 31 May 2018 09:57:36 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxwcm9kdWN0c1xmdWxsXGNvcnRlZ2U=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"categoryCollection":["For Erudite","For Men","For Woman"],"productCollection":[{"productName":"Harry Potter","categoryParameters":{"For Erudite":10,"For Men":7,"For Woman":7},"cost":2000.0,"count":1},{"productName":"The Witcher 3","categoryParameters":{"For Erudite":3,"For Men":5,"For Woman":3},"cost":2500.0,"count":2}]}
+
+
+
+63663368473745534518 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/products/full/cortege
+Accept: application/json
+
+
+63663368473745534518 - Response: Date: Thu, 31 May 2018 10:01:13 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxwcm9kdWN0c1xmdWxsXGNvcnRlZ2U=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"categoryCollection":["For Erudite","For Men","For Woman"],"productCollection":[{"productName":"Harry Potter","categoryParameters":{"For Erudite":10,"For Men":7,"For Woman":7},"cost":2000.0,"count":1},{"productName":"The Witcher 3","categoryParameters":{"For Erudite":3,"For Men":5,"For Woman":3},"cost":2500.0,"count":2}]}
+
+
+
+63663368493512158227 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+63663368493512158227 - Response: Date: Thu, 31 May 2018 10:01:33 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}]
+
+
+
+63663368580499787246 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+63663368580499787246 - Response: Date: Thu, 31 May 2018 10:03:00 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+63663368580596239756 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiYmI3NzI3NjItNmE0YS00YWE3LThlN2MtYzNkZGQyYjMwMjJmIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NzcyOTgwLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.Ip1RJVl5dnux5btYK63ahIrKDZ-gEaAJmyNgopVNDek"
+}
+
+63663368580596239756 - Response: Date: Thu, 31 May 2018 10:03:00 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiYmI3NzI3NjItNmE0YS00YWE3LThlN2MtYzNkZGQyYjMwMjJmIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3NzcyOTgwLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.Ip1RJVl5dnux5btYK63ahIrKDZ-gEaAJmyNgopVNDek"}
+
+
+
+63663368583125393127 - Request: SERVICE: ArtistService 
+GET: http://localhost:61478//api/OrderItems
+Accept: application/json
+
+
+63663368583125393127 - Response: Date: Thu, 31 May 2018 10:03:03 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXE9yZGVyU2VydmljZVxPcmRlclNlcnZpY2VcYXBpXE9yZGVySXRlbXM=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productsInBox":"Harry Potter=2","adress":"Geroyev Panfilovcev, 14/53","cost":3000.0,"userInfo":"Vladimir","deliveryInfo":"Во второй половине дня, номер для связи +7925ххххххх"},{"id":2,"productsInBox":"Harry Potter=1;The Witcher 3=1","adress":"Фрязино, пр. Мира, 10/40","cost":2300.0,"userInfo":"Наталия","deliveryInfo":"Перед доставкой позвонить, номер для связи +7926ххххххх"}]
+
+
+
+6366353465470090479 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+6366353465470090479 - Response: Date: Sat, 02 Jun 2018 08:10:54 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}]
+
+
+
+63663534712210482335 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sasd"
+}
+
+63663534712210482335 - Response: Date: Sat, 02 Jun 2018 08:11:52 GMT
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: NoContent
+
+
+
+
+63663534735120377937 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+63663534735120377937 - Response: Date: Sat, 02 Jun 2018 08:12:15 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+63663534735552888737 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiMmYyOGMwZTktZjQxMS00ZDM5LTliZTQtODA2OGMwMTJiMzFhIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTM5MTM1LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.tdXppGbwCGYy4K4wFrnPJipXsnf1s7HXxtvKMPda2ZU"
+}
+
+63663534735552888737 - Response: Date: Sat, 02 Jun 2018 08:12:15 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiMmYyOGMwZTktZjQxMS00ZDM5LTliZTQtODA2OGMwMTJiMzFhIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTM5MTM1LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.tdXppGbwCGYy4K4wFrnPJipXsnf1s7HXxtvKMPda2ZU"}
+
+
+
+63663534738489515636 - Request: SERVICE: ArtistService 
+GET: http://localhost:54196//api/users
+Accept: application/json
+
+
+63663534738489515636 - Response: Date: Sat, 02 Jun 2018 08:12:18 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVx1c2Vycw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiMmYyOGMwZTktZjQxMS00ZDM5LTliZTQtODA2OGMwMTJiMzFhIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTM5MTM1LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.tdXppGbwCGYy4K4wFrnPJipXsnf1s7HXxtvKMPda2ZU"},{"id":2,"login":"Georg","password":"0eaa49b13340bc2514b45219c7428742","role":"User","lastToken":null},{"id":1002,"login":"Gail","password":"e73bcf7abea548863c7ffdb0555fd03f","role":"User","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJHYWlsIiwianRpIjoiOTIxYTBhYjUtZjBkOS00MWU2LWFmNTctYzY5ZDNlNWZhYTBiIiwiVXNlciI6IjEwMDIiLCJleHAiOjE1Mjc2NTczMDgsImlzcyI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIiwiYXVkIjoiVGVzdC5TZWN1cml0eS5CZWFyZXIifQ.8liP76JuZrhyMsJc41VlmSaFyN8eiiNeGhEYAB-lkLI"}]
+
+
+
+63663534741177693637 - Request: SERVICE: ArtistService 
+GET: http://localhost:61478//api/OrderItems
+Accept: application/json
+
+
+63663534741177693637 - Response: Date: Sat, 02 Jun 2018 08:12:21 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXE9yZGVyU2VydmljZVxPcmRlclNlcnZpY2VcYXBpXE9yZGVySXRlbXM=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productsInBox":"Harry Potter=2","adress":"Geroyev Panfilovcev, 14/53","cost":3000.0,"userInfo":"Vladimir","deliveryInfo":"Во второй половине дня, номер для связи +7925ххххххх"},{"id":2,"productsInBox":"Harry Potter=1;The Witcher 3=1","adress":"Фрязино, пр. Мира, 10/40","cost":2300.0,"userInfo":"Наталия","deliveryInfo":"Перед доставкой позвонить, номер для связи +7926ххххххх"}]
+
+
+
+63663534743851472956 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/products/full/cortege
+Accept: application/json
+
+
+63663534743851472956 - Response: Date: Sat, 02 Jun 2018 08:12:23 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxwcm9kdWN0c1xmdWxsXGNvcnRlZ2U=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"categoryCollection":["For Erudite","For Men","For Woman"],"productCollection":[{"productName":"Harry Potter","categoryParameters":{"For Erudite":10,"For Men":7,"For Woman":7},"cost":2000.0,"count":1},{"productName":"The Witcher 3","categoryParameters":{"For Erudite":3,"For Men":5,"For Woman":3},"cost":2500.0,"count":2}]}
+
+
+
+63663534772467478634 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+63663534772467478634 - Response: Date: Sat, 02 Jun 2018 08:12:52 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}]
+
+
+
+6366353504930342528 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+6366353504930342528 - Response: Date: Sat, 02 Jun 2018 08:17:29 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}]
+
+
+
+63663535059686923210 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+63663535059686923210 - Response: Date: Sat, 02 Jun 2018 08:17:39 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+6366353506001380119 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiMGVjYmFhYjctOTdmNC00Y2VhLWFhOTUtMjEyNjBmNWJkMmUxIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTM5NDU5LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.jMDtfnJAl1JeBVQd-CkGdoGRA1948q11yRoIXw3m1Tc"
+}
+
+6366353506001380119 - Response: Date: Sat, 02 Jun 2018 08:17:39 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiMGVjYmFhYjctOTdmNC00Y2VhLWFhOTUtMjEyNjBmNWJkMmUxIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTM5NDU5LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.jMDtfnJAl1JeBVQd-CkGdoGRA1948q11yRoIXw3m1Tc"}
+
+
+
+6366353506490240388 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+6366353506490240388 - Response: Date: Sat, 02 Jun 2018 08:17:44 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}]
+
+
+
+6366353566904977638 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+6366353566904977638 - Response: Date: Sat, 02 Jun 2018 08:27:49 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+6366353566954082248 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiNDZlNjM5MjgtNjI3My00N2U2LWJiOTktNjk5NzMxZDgzNmIwIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQwMDY5LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.WNAFdicShls1zkonLaxhFTRb3etBoCSJ2sUm3TmMP0E"
+}
+
+6366353566954082248 - Response: Date: Sat, 02 Jun 2018 08:27:49 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiNDZlNjM5MjgtNjI3My00N2U2LWJiOTktNjk5NzMxZDgzNmIwIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQwMDY5LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.WNAFdicShls1zkonLaxhFTRb3etBoCSJ2sUm3TmMP0E"}
+
+
+
+6366353576836210508 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+6366353576836210508 - Response: Date: Sat, 02 Jun 2018 08:29:28 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+6366353576927851528 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiYWQ2N2M2ZmYtNGYwNS00OWJlLWI3NmUtMDZiZDE5ZmU5NzkxIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQwMTY4LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.E_rsChaXlqI3z-k2DRbNDcNUStIevAmZH2HZ3eu0o8w"
+}
+
+6366353576927851528 - Response: Date: Sat, 02 Jun 2018 08:29:28 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiYWQ2N2M2ZmYtNGYwNS00OWJlLWI3NmUtMDZiZDE5ZmU5NzkxIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQwMTY4LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.E_rsChaXlqI3z-k2DRbNDcNUStIevAmZH2HZ3eu0o8w"}
+
+
+
+6366353577285151359 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+6366353577285151359 - Response: Date: Sat, 02 Jun 2018 08:29:32 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}]
+
+
+
+6366353579479834158 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+6366353579479834158 - Response: Date: Sat, 02 Jun 2018 08:29:54 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}]
+
+
+
+63663535804597156011 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+63663535804597156011 - Response: Date: Sat, 02 Jun 2018 08:30:04 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}]
+
+
+
+63663535965246510710 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+63663535965246510710 - Response: Date: Sat, 02 Jun 2018 08:32:45 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+63663535965798039310 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiY2I0MDk1OWItMGNlNC00NmZiLWE5MjktMThiYTgyMDk1ZmY1IiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQwMzY1LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.DWOPwsrXqV-AqlwLg8cK4Q5Yxmo4sszVEoR5gW4bFb8"
+}
+
+63663535965798039310 - Response: Date: Sat, 02 Jun 2018 08:32:45 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiY2I0MDk1OWItMGNlNC00NmZiLWE5MjktMThiYTgyMDk1ZmY1IiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQwMzY1LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.DWOPwsrXqV-AqlwLg8cK4Q5Yxmo4sszVEoR5gW4bFb8"}
+
+
+
+63663535969591848811 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+63663535969591848811 - Response: Date: Sat, 02 Jun 2018 08:32:49 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}]
+
+
+
+6366353598460236959 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+6366353598460236959 - Response: Date: Sat, 02 Jun 2018 08:33:04 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}]
+
+
+
+63663536021552521630 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+63663536021552521630 - Response: Date: Sat, 02 Jun 2018 08:33:41 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}]
+
+
+
+6366353613480451438 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+6366353613480451438 - Response: Date: Sat, 02 Jun 2018 08:35:34 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+6366353613553568648 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiMTQyMWZkY2MtOTJmZC00ZTgxLWJlMDgtODZlN2FhMGRhN2ViIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQwNTM0LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.7ctotXMMDEUWUjtrbhlVq5qtwWL0X2NyBFd1OYCCuZw"
+}
+
+6366353613553568648 - Response: Date: Sat, 02 Jun 2018 08:35:34 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiMTQyMWZkY2MtOTJmZC00ZTgxLWJlMDgtODZlN2FhMGRhN2ViIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQwNTM0LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.7ctotXMMDEUWUjtrbhlVq5qtwWL0X2NyBFd1OYCCuZw"}
+
+
+
+6366353632167907199 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+6366353632167907199 - Response: Date: Sat, 02 Jun 2018 08:38:41 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}]
+
+
+
+6366353633885380668 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44353///api/Products
+Accept: application/json
+
+{
+  "ProductCategory": "Book",
+  "ProductName": "Game of Thrones",
+  "Cost": 1800.0,
+  "CountInBase": 1
+}
+
+6366353633885380668 - Response: Date: Sat, 02 Jun 2018 08:38:58 GMT
+Transfer-Encoding: chunked
+Location: https://localhost:44353/api/Products/3
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":3,"productCategory":"Book","productName":"Game of Thrones","cost":1800.0,"countInBase":1,"boundedWith":null}
+
+
+
+63663536345402552810 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44353///api/Products
+Accept: application/json
+
+{
+  "ProductCategory": "Book",
+  "ProductName": "Game of Thrones",
+  "Cost": 1800.0,
+  "CountInBase": 1
+}
+
+63663536345402552810 - Response: Date: Sat, 02 Jun 2018 08:39:05 GMT
+Transfer-Encoding: chunked
+Location: https://localhost:44353/api/Products/4
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":4,"productCategory":"Book","productName":"Game of Thrones","cost":1800.0,"countInBase":1,"boundedWith":null}
+
+
+
+63663536348506526821 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+63663536348506526821 - Response: Date: Sat, 02 Jun 2018 08:39:08 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null},{"id":3,"productCategory":"Book","productName":"Game of Thrones","cost":1800.0,"countInBase":1,"boundedWith":null},{"id":4,"productCategory":"Book","productName":"Game of Thrones","cost":1800.0,"countInBase":1,"boundedWith":null}]
+
+
+
+63663536604663919019 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+63663536604663919019 - Response: Date: Sat, 02 Jun 2018 08:43:23 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null},{"id":3,"productCategory":"Book","productName":"Game of Thrones","cost":1800.0,"countInBase":1,"boundedWith":null},{"id":4,"productCategory":"Book","productName":"Game of Thrones","cost":1800.0,"countInBase":1,"boundedWith":null}]
+
+
+
+63663536620687328729 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+63663536620687328729 - Response: Date: Sat, 02 Jun 2018 08:43:40 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+6366353662109780848 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiNmVkMTNhYzctOGY0Zi00YmQwLTllOWQtM2Y4YmVlNGEzYjQxIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQxMDIwLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.zZti3hJoFAxyZc_BIP86pdMWk7Jy5kSzBm2cyNIyyXY"
+}
+
+6366353662109780848 - Response: Date: Sat, 02 Jun 2018 08:43:40 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiNmVkMTNhYzctOGY0Zi00YmQwLTllOWQtM2Y4YmVlNGEzYjQxIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQxMDIwLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.zZti3hJoFAxyZc_BIP86pdMWk7Jy5kSzBm2cyNIyyXY"}
+
+
+
+63663536623805074611 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+63663536623805074611 - Response: Date: Sat, 02 Jun 2018 08:43:43 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null},{"id":3,"productCategory":"Book","productName":"Game of Thrones","cost":1800.0,"countInBase":1,"boundedWith":null},{"id":4,"productCategory":"Book","productName":"Game of Thrones","cost":1800.0,"countInBase":1,"boundedWith":null}]
+
+
+
+63663536627430553111 - Request: SERVICE: AuthorisationService 
+Delete: https://localhost:44353///api/Products/4
+Accept: application/json
+
+
+63663536627430553111 - Response: Date: Sat, 02 Jun 2018 08:43:47 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0c1w0?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":4,"productCategory":"Book","productName":"Game of Thrones","cost":1800.0,"countInBase":1,"boundedWith":null}
+
+
+
+63663536667550666211 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+63663536667550666211 - Response: Date: Sat, 02 Jun 2018 08:44:27 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null},{"id":3,"productCategory":"Book","productName":"Game of Thrones","cost":1800.0,"countInBase":1,"boundedWith":null}]
+
+
+
+6366353705562148849 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+6366353705562148849 - Response: Date: Sat, 02 Jun 2018 08:50:55 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+63663537056101805718 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiYjc2MTFjZGMtMWFkYS00ZTUzLThlZTItYWQwYThlMWFmNTQ0IiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQxNDU1LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.28lhR7bdBGrV-_9Hm9hJi0Nx0QjKJGjXYA1j9chxLf4"
+}
+
+63663537056101805718 - Response: Date: Sat, 02 Jun 2018 08:50:55 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiYjc2MTFjZGMtMWFkYS00ZTUzLThlZTItYWQwYThlMWFmNTQ0IiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQxNDU1LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.28lhR7bdBGrV-_9Hm9hJi0Nx0QjKJGjXYA1j9chxLf4"}
+
+
+
+6366353705819256989 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+6366353705819256989 - Response: Date: Sat, 02 Jun 2018 08:50:58 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null},{"id":3,"productCategory":"Book","productName":"Game of Thrones","cost":1800.0,"countInBase":1,"boundedWith":null}]
+
+
+
+63663537114023799911 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44353///api/Products
+Accept: application/json
+
+{
+  "ProductCategory": "Wine",
+  "ProductName": "chateau gassier rose 946",
+  "Cost": 5900.0,
+  "CountInBase": 2
+}
+
+63663537114023799911 - Response: Date: Sat, 02 Jun 2018 08:51:54 GMT
+Transfer-Encoding: chunked
+Location: https://localhost:44353/api/Products/1003
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1003,"productCategory":"Wine","productName":"chateau gassier rose 946","cost":5900.0,"countInBase":2,"boundedWith":null}
+
+
+
+63663537114088462511 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+63663537114088462511 - Response: Date: Sat, 02 Jun 2018 08:51:54 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null},{"id":3,"productCategory":"Book","productName":"Game of Thrones","cost":1800.0,"countInBase":1,"boundedWith":null},{"id":1003,"productCategory":"Wine","productName":"chateau gassier rose 946","cost":5900.0,"countInBase":2,"boundedWith":null}]
+
+
+
+63663537120791220518 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/products/full/cortege
+Accept: application/json
+
+
+63663537120791220518 - Response: Date: Sat, 02 Jun 2018 08:52:00 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxwcm9kdWN0c1xmdWxsXGNvcnRlZ2U=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"categoryCollection":["For Erudite","For Men","For Woman"],"productCollection":[{"productName":"Harry Potter","categoryParameters":{"For Erudite":10,"For Men":7,"For Woman":7},"cost":2000.0,"count":1},{"productName":"The Witcher 3","categoryParameters":{"For Erudite":3,"For Men":5,"For Woman":3},"cost":2500.0,"count":2},{"productName":"Game of Thrones","categoryParameters":{},"cost":1800.0,"count":1},{"productName":"chateau gassier rose 946","categoryParameters":{},"cost":5900.0,"count":2}]}
+
+
+
+63663537134843118419 - Request: SERVICE: AuthorisationService 
+POST: https://localhost:44353///api/Products
+Accept: application/json
+
+{
+  "ProductCategory": "Wine",
+  "ProductName": "chateau gassier rose 946",
+  "Cost": 5900.0,
+  "CountInBase": 2
+}
+
+63663537134843118419 - Response: Date: Sat, 02 Jun 2018 08:52:14 GMT
+Transfer-Encoding: chunked
+Location: https://localhost:44353/api/Products/1004
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":1004,"productCategory":"Wine","productName":"chateau gassier rose 946","cost":5900.0,"countInBase":2,"boundedWith":null}
+
+
+
+63663537134889339942 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+63663537134889339942 - Response: Date: Sat, 02 Jun 2018 08:52:14 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null},{"id":3,"productCategory":"Book","productName":"Game of Thrones","cost":1800.0,"countInBase":1,"boundedWith":null},{"id":1003,"productCategory":"Wine","productName":"chateau gassier rose 946","cost":5900.0,"countInBase":2,"boundedWith":null},{"id":1004,"productCategory":"Wine","productName":"chateau gassier rose 946","cost":5900.0,"countInBase":2,"boundedWith":null}]
+
+
+
+63663537137742594842 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+63663537137742594842 - Response: Date: Sat, 02 Jun 2018 08:52:17 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null},{"id":3,"productCategory":"Book","productName":"Game of Thrones","cost":1800.0,"countInBase":1,"boundedWith":null},{"id":1003,"productCategory":"Wine","productName":"chateau gassier rose 946","cost":5900.0,"countInBase":2,"boundedWith":null},{"id":1004,"productCategory":"Wine","productName":"chateau gassier rose 946","cost":5900.0,"countInBase":2,"boundedWith":null}]
+
+
+
+6366353714127728079 - Request: SERVICE: AuthorisationService 
+Delete: https://localhost:44353///api/Products/1004
+Accept: application/json
+
+
+6366353714127728079 - Response: Date: Sat, 02 Jun 2018 08:52:21 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0c1wxMDA0?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1004,"productCategory":"Wine","productName":"chateau gassier rose 946","cost":5900.0,"countInBase":2,"boundedWith":null}
+
+
+
+6366353714134413519 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+6366353714134413519 - Response: Date: Sat, 02 Jun 2018 08:52:21 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null},{"id":3,"productCategory":"Book","productName":"Game of Thrones","cost":1800.0,"countInBase":1,"boundedWith":null},{"id":1003,"productCategory":"Wine","productName":"chateau gassier rose 946","cost":5900.0,"countInBase":2,"boundedWith":null}]
+
+
+
+6366353714552078409 - Request: SERVICE: AuthorisationService 
+Delete: https://localhost:44353///api/Products/1003
+Accept: application/json
+
+
+6366353714552078409 - Response: Date: Sat, 02 Jun 2018 08:52:25 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0c1wxMDAz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1003,"productCategory":"Wine","productName":"chateau gassier rose 946","cost":5900.0,"countInBase":2,"boundedWith":null}
+
+
+
+63663537145573794911 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+63663537145573794911 - Response: Date: Sat, 02 Jun 2018 08:52:25 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null},{"id":3,"productCategory":"Book","productName":"Game of Thrones","cost":1800.0,"countInBase":1,"boundedWith":null}]
+
+
+
+63663537146916865319 - Request: SERVICE: AuthorisationService 
+Delete: https://localhost:44353///api/Products/3
+Accept: application/json
+
+
+63663537146916865319 - Response: Date: Sat, 02 Jun 2018 08:52:26 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0c1wz?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":3,"productCategory":"Book","productName":"Game of Thrones","cost":1800.0,"countInBase":1,"boundedWith":null}
+
+
+
+63663537146955310711 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+63663537146955310711 - Response: Date: Sat, 02 Jun 2018 08:52:26 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}]
+
+
+
+63663537324593075711 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+63663537324593075711 - Response: Date: Sat, 02 Jun 2018 08:55:24 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}]
+
+
+
+63663537337056650210 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+63663537337056650210 - Response: Date: Sat, 02 Jun 2018 08:55:37 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+63663537337339942418 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiOGQzNGNmNjctMjJkOS00ODQxLWJlMjYtY2VjMmQ2YjgxZWNmIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQxNzM3LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.UXfg-bmBjbcgsj9WVN7yaysFtzbK6hKDVOy7r28x8OE"
+}
+
+63663537337339942418 - Response: Date: Sat, 02 Jun 2018 08:55:37 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiOGQzNGNmNjctMjJkOS00ODQxLWJlMjYtY2VjMmQ2YjgxZWNmIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQxNzM3LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.UXfg-bmBjbcgsj9WVN7yaysFtzbK6hKDVOy7r28x8OE"}
+
+
+
+63663537340532371710 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+63663537340532371710 - Response: Date: Sat, 02 Jun 2018 08:55:40 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}]
+
+
+
+63663537347270698911 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+63663537347270698911 - Response: Date: Sat, 02 Jun 2018 08:55:47 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}]
+
+
+
+6366353816152847009 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+6366353816152847009 - Response: Date: Sat, 02 Jun 2018 09:09:21 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+6366353816233331219 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiY2YyN2I2NDItZWJiOS00ZTM5LWIxZGMtOGY5YmRmN2QyMzllIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQyNTYxLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.7WchbRzZUj3vXbJq7zKdMD781YPwKdZQx_1U8FuwgdA"
+}
+
+6366353816233331219 - Response: Date: Sat, 02 Jun 2018 09:09:21 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiY2YyN2I2NDItZWJiOS00ZTM5LWIxZGMtOGY5YmRmN2QyMzllIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQyNTYxLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.7WchbRzZUj3vXbJq7zKdMD781YPwKdZQx_1U8FuwgdA"}
+
+
+
+6366353816527172579 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+6366353816527172579 - Response: Date: Sat, 02 Jun 2018 09:09:25 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}]
+
+
+
+6366353816980209719 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products2
+Accept: application/json
+
+
+6366353816980209719 - Response: Date: Sat, 02 Jun 2018 09:09:29 GMT
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0czI=?=
+X-Powered-By: ASP.NET
+
+Status: NotFound
+Not Found
+
+
+
+63663538373556698020 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+63663538373556698020 - Response: Date: Sat, 02 Jun 2018 09:12:53 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+6366353837426096109 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiMDQ4ZGE3YTMtNzI4Ni00YWJlLWFkOGEtZTk0MTBkZmVlM2Y2IiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQyNzczLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.8Ec_JNR5FIZqb_743ygCClGoU5zbXzCI_elq5QobFbU"
+}
+
+6366353837426096109 - Response: Date: Sat, 02 Jun 2018 09:12:53 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiMDQ4ZGE3YTMtNzI4Ni00YWJlLWFkOGEtZTk0MTBkZmVlM2Y2IiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQyNzczLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.8Ec_JNR5FIZqb_743ygCClGoU5zbXzCI_elq5QobFbU"}
+
+
+
+63663538377823507720 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+63663538377823507720 - Response: Date: Sat, 02 Jun 2018 09:12:57 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}]
+
+
+
+6366353838180700939 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products/2
+Accept: application/json
+
+
+6366353838180700939 - Response: Date: Sat, 02 Jun 2018 09:13:01 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0c1wy?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}
+
+
+
+6366353839069247269 - Request: SERVICE: AuthorisationService 
+PUT: https://localhost:44353///api/Products/2
+Accept: application/json
+
+{
+  "ProductCategory": "ComputerItem",
+  "ProductName": "The Witcher 3",
+  "Cost": 3000.0,
+  "CountInBase": 2
+}
+
+6366353839069247269 - Response: Date: Sat, 02 Jun 2018 09:13:10 GMT
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0c1wy?=
+X-Powered-By: ASP.NET
+
+Status: BadRequest
+Bad Request
+
+
+
+6366353841592780878 - Request: SERVICE: AuthorisationService 
+PUT: https://localhost:44353///api/Products/2
+Accept: application/json
+
+{
+  "ProductCategory": "ComputerItem",
+  "ProductName": "The Witcher 3",
+  "Cost": 3000.0,
+  "CountInBase": 2
+}
+
+6366353841592780878 - Response: Date: Sat, 02 Jun 2018 09:13:35 GMT
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0c1wy?=
+X-Powered-By: ASP.NET
+
+Status: BadRequest
+Bad Request
+
+
+
+63663538521002080011 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+63663538521002080011 - Response: Date: Sat, 02 Jun 2018 09:15:20 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+6366353852152926838 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiODA3ZTQ0NDMtMGVhNi00YTMyLTg5NzgtNzkzNjUxZTliZThhIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQyOTIxLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.urTg7fiHphMTP1olTjUoN5E4gBqQNUq95C0zabh3kXE"
+}
+
+6366353852152926838 - Response: Date: Sat, 02 Jun 2018 09:15:20 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiODA3ZTQ0NDMtMGVhNi00YTMyLTg5NzgtNzkzNjUxZTliZThhIiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQyOTIxLCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.urTg7fiHphMTP1olTjUoN5E4gBqQNUq95C0zabh3kXE"}
+
+
+
+63663538524815347610 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+63663538524815347610 - Response: Date: Sat, 02 Jun 2018 09:15:24 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}]
+
+
+
+6366353853191775968 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products/2
+Accept: application/json
+
+
+6366353853191775968 - Response: Date: Sat, 02 Jun 2018 09:15:31 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0c1wy?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":2500.0,"countInBase":2,"boundedWith":null}
+
+
+
+63663538538126710610 - Request: SERVICE: AuthorisationService 
+PUT: https://localhost:44353///api/Products/2
+Accept: application/json
+
+{
+  "ID": 2,
+  "ProductCategory": "ComputerItem",
+  "ProductName": "The Witcher 3",
+  "Cost": 3000.0,
+  "CountInBase": 2
+}
+
+63663538538126710610 - Response: Date: Sat, 02 Jun 2018 09:15:38 GMT
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0c1wy?=
+X-Powered-By: ASP.NET
+
+Status: NoContent
+
+
+
+
+63663538538251573430 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+63663538538251573430 - Response: Date: Sat, 02 Jun 2018 09:15:38 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":3000.0,"countInBase":2,"boundedWith":null}]
+
+
+
+6366354332448937108 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+6366354332448937108 - Response: Date: Sat, 02 Jun 2018 10:35:24 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":3000.0,"countInBase":2,"boundedWith":null}]
+
+
+
+63663543394349720510 - Request: SERVICE: ArtistService 
+GET: https://localhost:44353///api/Products
+Accept: application/json
+
+
+63663543394349720510 - Response: Date: Sat, 02 Jun 2018 10:36:34 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXFByb2R1Y3RzU2VydmljZVxQcm9kdWN0c1NlcnZpY2VcUHJvZHVjdHNTZXJ2aWNlXGFwaVxQcm9kdWN0cw==?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productCategory":"Book","productName":"Harry Potter","cost":2000.0,"countInBase":1,"boundedWith":null},{"id":2,"productCategory":"ComputerItem","productName":"The Witcher 3","cost":3000.0,"countInBase":2,"boundedWith":null}]
+
+
+
+63663544445227837810 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:61478//api/OrderItems
+Accept: application/json
+
+{
+  "Adress": "asd",
+  "Cost": 99999.0,
+  "DeliveryInfo": "asd",
+  "ProductsInBox": "Harry Potter=20Witcher 3=20",
+  "UserInfo": "Vova:gail@yandex.ru"
+}
+
+63663544445227837810 - Response: Date: Sat, 02 Jun 2018 10:54:05 GMT
+Transfer-Encoding: chunked
+Location: http://localhost:61478/api/OrderItems/3
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXE9yZGVyU2VydmljZVxPcmRlclNlcnZpY2VcYXBpXE9yZGVySXRlbXM=?=
+X-Powered-By: ASP.NET
+
+Status: Created
+{"id":3,"productsInBox":"Harry Potter=20Witcher 3=20","adress":"asd","cost":99999.0,"userInfo":"Vova:gail@yandex.ru","deliveryInfo":"asd"}
+
+
+
+63663544464817349422 - Request: SERVICE: AuthorisationService 
+POST: http://localhost:54196//api/Users/Find
+Accept: application/json
+
+{
+  "Login": "Vova",
+  "Password": "sad"
+}
+
+63663544464817349422 - Response: Date: Sat, 02 Jun 2018 10:54:24 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1xGaW5k?=
+X-Powered-By: ASP.NET
+
+Status: OK
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":null}
+
+
+
+63663544465190532021 - Request: SERVICE: AuthorisationService 
+PUT: http://localhost:54196//api/Users/1
+Accept: application/json
+
+{
+  "id": 1,
+  "login": "Vova",
+  "password": "16cfe4f2e1519c415b9b11024c0cba52",
+  "role": "Admin",
+  "lasttoken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiMTljOTZlNjYtYzdhZS00NzQyLWE5YWUtNDAyNmFlYTUwM2I3IiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQ4ODY0LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.KsEDj5CuiaT3ZULl-mJWtdv2UQx8DpYVIBCN0s3R2fs"
+}
+
+63663544465190532021 - Response: Date: Sat, 02 Jun 2018 10:54:24 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXEF1dGhvcmlzYXRpb25TZXJ2aWNlXEF1dGhvcmlzYXRpb25TZXJ2aWNlXGFwaVxVc2Vyc1wx?=
+X-Powered-By: ASP.NET
+
+Status: Accepted
+{"id":1,"login":"Vova","password":"16cfe4f2e1519c415b9b11024c0cba52","role":"Admin","lastToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJWb3ZhIiwianRpIjoiMTljOTZlNjYtYzdhZS00NzQyLWE5YWUtNDAyNmFlYTUwM2I3IiwiQWRtaW4iOiIxIiwiZXhwIjoxNTI3OTQ4ODY0LCJpc3MiOiJUZXN0LlNlY3VyaXR5LkJlYXJlciIsImF1ZCI6IlRlc3QuU2VjdXJpdHkuQmVhcmVyIn0.KsEDj5CuiaT3ZULl-mJWtdv2UQx8DpYVIBCN0s3R2fs"}
+
+
+
+63663544466897008322 - Request: SERVICE: ArtistService 
+GET: http://localhost:61478//api/OrderItems
+Accept: application/json
+
+
+63663544466897008322 - Response: Date: Sat, 02 Jun 2018 10:54:26 GMT
+Transfer-Encoding: chunked
+Server: Kestrel
+X-SourceFiles: =?UTF-8?B?QzpcVXNlcnNcVmxhZGltaXJcRG9jdW1lbnRzXEdpdEh1YlxSU09JX0tVUlNcUlNPSV9LVVJTXE9yZGVyU2VydmljZVxPcmRlclNlcnZpY2VcYXBpXE9yZGVySXRlbXM=?=
+X-Powered-By: ASP.NET
+
+Status: OK
+[{"id":1,"productsInBox":"Harry Potter=2","adress":"Geroyev Panfilovcev, 14/53","cost":3000.0,"userInfo":"Vladimir","deliveryInfo":"Во второй половине дня, номер для связи +7925ххххххх"},{"id":2,"productsInBox":"Harry Potter=1;The Witcher 3=1","adress":"Фрязино, пр. Мира, 10/40","cost":2300.0,"userInfo":"Наталия","deliveryInfo":"Перед доставкой позвонить, номер для связи +7926ххххххх"},{"id":3,"productsInBox":"Harry Potter=20Witcher 3=20","adress":"asd","cost":99999.0,"userInfo":"Vova:gail@yandex.ru","deliveryInfo":"asd"}]
+
+
+
